@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="{$hhs_css_path}/haohaios.css" rel="stylesheet" />
+<link href="{$hhs_css_path}/font-awesome.min.css" rel="stylesheet" />
+{insert_scripts files='jquery.js,haohaios.js'}
+</head>
+<body id="rank">
+<div class="container">
+    <div class="nav_fixed rank_fixed">
+        <a href="rank.php?act=hot" class="fixed_nav_item"><span class="nav_txt{if $action eq 'hot' } nav_cur{/if}">热榜</span></a>
+        <a href="rank.php?act=new" class="fixed_nav_item"><span class="nav_txt{if $action eq 'new' } nav_cur{/if}">新榜</span></a>
+        <a href="rank.php?act=best" class="fixed_nav_item"><span class="nav_txt{if $action eq 'best' } nav_cur{/if}">精品</span></a>
+    </div>
+	<section class="main-view" style="margin-top:52px; background:#fff;">
+        <div id="tuan" class="tuan" style="padding-top: 10px; display: block;">
+
+                <!--{foreach name=goods_list from=$goods_list item=goods}-->
+                
+        <div class="rank_g">
+            
+            <div class="rank_g_img">
+                <a href="{if $goods.goods_number gt 0}{$goods.url}{else}javascript:void(0);{/if}"><img src="{$goods.goods_thumb}"></a>
+                {if $goods.goods_number lt 1}<span class="sell_f"></span>{/if}
+                <div class="rank_g_index">TOP {$smarty.foreach.goods_list.iteration}</div>
+            </div>
+            <div class="rank_g_info">
+                <p class="rank_g_name"><a href="{if $goods.goods_number gt 0}{$goods.url}{else}javascript:void(0);{/if}">{$goods.goods_name}</a></p>
+            </div>
+            <div class="rank_core">
+                <div class="rank_g_volume">
+                    已售 <b>{$goods.buy_nums|default:0}</b> 件
+                </div>
+                <div class="rank_g_core">
+                    <div class="rank_g_price">
+                        <span>{$goods.team_num}人团</span>
+                        <b><span>¥ </span>{$goods.team_price}</b>
+                    </div>
+                    <a href="{if $goods.goods_number gt 0}{$goods.url}{else}javascript:void(0);{/if}" class="rank_g_btn">去开团</a>
+                </div>
+            </div>
+        </div>
+                <!--{/foreach}-->
+
+        </div>
+    </section>
+ 
+</div>
+<!-- #BeginLibraryItem "/library/footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

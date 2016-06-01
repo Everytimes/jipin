@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="{$hhs_css_path}/haohaios.css" rel="stylesheet" />
+<link href="{$hhs_css_path}/font-awesome.min.css" rel="stylesheet" />
+{* 包含脚本文件 *}
+{insert_scripts files='jquery.js,haohaios.js'}
+</head>
+<body id="catalog">
+<div class="container">
+    <div class="tuan" style="padding-top:10px; display: block;">
+        <!--{foreach from=$goods_list item=goods}-->
+        <!-- {if $goods.goods_id} -->
+        <div class="tuan_g" >
+            <div class="tuan_g_img">
+                <a href="{if $goods.goods_number gt 0}{$goods.url}{else}javascript:void(0);{/if}"><img src="{$goods.little_img}"></a>
+                {if $goods.goods_number lt 1}
+                <span class="sell_f"></span>
+                {/if}
+                {if $goods.logo}
+                <div class="tuan_seller"><img src="{$goods.logo}"></div>
+                {/if}
+                {if $goods.ts_a || $goods.ts_b ||$goods.ts_c}
+                <div class="tuan_g_img_text">
+                    {if $goods.ts_a}
+                    <div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>{$goods.ts_a}</span></div>
+                    </div>
+                    {/if}
+                    {if $goods.ts_b}
+                    <div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>{$goods.ts_b}</span></div>
+                    </div>
+                    {/if}
+                    {if $goods.ts_c}
+                    <div class="tuan_g_img_item">
+                        <div class="tuan_g_img_round"></div>
+                        <div class="tuan_img_text_border"><span>{$goods.ts_c}</span></div>
+                    </div>
+                    {/if}
+                </div>
+                {/if}
+            </div>
+            <div class="tuan_g_info">
+                <p class="tuan_g_name">{$goods.goods_name}</p>
+                <p class="tuan_g_cx">{$goods.goods_brief}</p>
+            </div>
+            <div class="tuan_g_core">
+                <div class="tuan_g_core_img"><img src="images/tuan_g_core-4935ae4c83.png"></div>
+                <div class="tuan_g_price">
+                    <span>{$goods.team_num}人团</span>
+                    <b>¥{$goods.team_price}</b>
+                </div>
+                <a href="{if $goods.goods_number gt 0}{$goods.url}{else}javascript:void(0);{/if}"><div class="tuan_g_btn">去开团</div></a>
+            </div>
+            <div class="like goods_list_like">
+                <img src="images/{$goods.like}like.png">
+                <a href="javascript:collect({$goods.goods_id})" class="like_click_button"></a>
+            </div>
+        </div>
+        <!--{/if}-->
+        <!--{/foreach}-->
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

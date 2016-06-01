@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="{$hhs_css_path}/haohaios.css" rel="stylesheet" />
+<link href="{$hhs_css_path}/font-awesome.min.css" rel="stylesheet" />
+{insert_scripts files='jquery.js,haohaios.js'}
+<script type="text/javascript">
+    var process_request = "{$lang.process_request}";
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+</script>
+</head>
+<body id="catalog">
+<div class="container">
+    <div class="top_search">
+        <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()">
+            <input name="keywords" id="keyword" type="text" class="text" value="{$search_keywords|escape}" maxlength="60" x-webkit-speech="" lang="zh-CN" onwebkitspeechchange="foo()" placeholder="请输入您要搜索的商品关键字" x-webkit-grammar="builtin:search" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+            <input type="submit" value="搜 索" class="submit" />
+        </form>
+    </div>
+    <div class="categories">
+        <!--{foreach from=$categories item=cat}-->
+        <dl>
+            <dt><a href="{$cat.url}"><img src="{$cat.img}" alt="{$cat.name|escape:html}" /></a></dt>
+            <dd>
+                <h3><a href="{$cat.url}">{$cat.name|escape:html}</a></h3>
+                <p>
+                <!--{foreach from=$cat.cat_id item=child}-->
+                <a href="{$child.url}">{$child.name|escape:html}</a>
+                <!--{/foreach}-->
+                </p>
+            </dd>
+        </dl>
+        <!--{/foreach}-->
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

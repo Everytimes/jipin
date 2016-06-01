@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="{$hhs_css_path}/haohaios.css" rel="stylesheet" />
+<link href="{$hhs_css_path}/font-awesome.min.css" rel="stylesheet" />
+<link href="{$hhs_css_path}/swiper.min.css" rel="stylesheet" />
+{* 包含脚本文件 *}
+{insert_scripts files='jquery.js,haohaios.js,swiper.min.js'}
+</head>
+<body>
+<div class="container">
+
+    <div class="mall_page_head">
+        <img src="{$stores_info.supp_logo}">
+        <div class="mall_detail_info">
+            <div class="mall_name">{$stores_info.suppliers_name}</div>
+            <ul class="mall_detail_icons">
+                <li class="mall_detail_sales">销量：{$sales_num}</li>
+            </ul>
+        </div>
+        <div class="share"><a class="share_link" id="share_button" href="javascript:void(0);" onclick="document.getElementById('share_img').style.display='';">分享店铺</a></div>
+    </div>
+
+
+<div id="share_img" class="share_img" style="display:none;" onclick="document.getElementById('share_img').style.display='none';">
+    <p><img class="arrow" src="themes/haohaios/images/share.png" ></p>
+    <p style="margin-top:120px; margin-right:50px;">点击右上角，</p>
+    <p style="margin-right:50px;">将此店铺分享给好友</p>
+</div>
+
+
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!--{foreach from=$supp_photo item=item name=photo}-->
+            <div class="swiper-slide">
+                <a href="{$item.link}"><img src="{$item.photo_file}" width="100%"></a>
+            </div>
+            <!--{/foreach}-->
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script type="text/javascript">
+        $(function() {
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: 2500,
+                autoplayDisableOnInteraction: false
+            });
+        });
+    </script>
+    <div class="tuan" style="padding-top:10px; display: block;">
+
+    <!--{foreach from=$goods_list item=goods}-->
+    <!-- {if $goods.goods_id} -->
+                <div class="tuan_g" >
+                        <div class="tuan_g_img">
+                            <a href="{if $goods.goods_number gt 0}{$goods.url}{else}javascript:void(0);{/if}"><img src="{$goods.little_img}"></a>
+                            {if $goods.goods_number lt 1}
+                            <span class="sell_f"></span>
+                            {/if}
+                            
+                            {if $goods.ts_a || $goods.ts_b ||$goods.ts_c}
+                            <div class="tuan_g_img_text">
+                                {if $goods.ts_a}
+                                <div class="tuan_g_img_item">
+                                    <div class="tuan_g_img_round"></div>
+                                    <div class="tuan_img_text_border"><span>{$goods.ts_a}</span></div>
+                                </div>
+                                {/if}
+                                {if $goods.ts_b}
+                                <div class="tuan_g_img_item">
+                                    <div class="tuan_g_img_round"></div>
+                                    <div class="tuan_img_text_border"><span>{$goods.ts_b}</span></div>
+                                </div>
+                                {/if}
+                                {if $goods.ts_c}
+                                <div class="tuan_g_img_item">
+                                    <div class="tuan_g_img_round"></div>
+                                    <div class="tuan_img_text_border"><span>{$goods.ts_c}</span></div>
+                                </div>
+                                {/if}
+                            </div>
+                            {/if}
+                        </div>
+                        
+                        
+                        <div class="tuan_g_info">
+                            <p class="tuan_g_name">{$goods.goods_name}</p>
+                            <p class="tuan_g_cx">{$goods.goods_brief}</p>
+                        </div>
+                        
+                        <div class="tuan_g_core">
+                            
+                            <div class="tuan_g_core_img"><img src="images/tuan_g_core-4935ae4c83.png"></div>
+                            <div class="tuan_g_price">
+                                <span>{$goods.team_num}人团</span>
+                                <b>¥{$goods.team_price}</b>
+                            </div>
+                            <a href="{if $goods.goods_number gt 0}{$goods.url}{else}javascript:void(0);{/if}"><div class="tuan_g_btn">去开团</div></a>
+                        </div>
+                        <div class="like goods_list_like">
+                            <img src="images/{$goods.like}like.png">
+                            <a href="javascript:collect({$goods.goods_id})" class="like_click_button"></a>
+                        </div>
+                </div>
+    <!--{/if}-->
+    <!--{/foreach}-->
+    
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/footer.lbi" --><!-- #EndLibraryItem -->
+
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script language="javascript" type="text/javascript">
+
+    wx.config({
+        debug: false,//这里是开启测试，如果设置为true，则打开每个步骤，都会有提示，是否成功或者失败
+        appId: '{$appid}',
+        timestamp: '{$timestamp}',//这个一定要与上面的php代码里的一样。
+        nonceStr: '{$timestamp}',//这个一定要与上面的php代码里的一样。
+        signature: '{$signature}',
+        jsApiList: [
+          // 所有要调用的 API 都要加到这个列表中
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareWeibo',
+            'checkJsApi',
+            'openLocation',
+            'getLocation'
+        ]
+    });
+    
+    var title="{$title}";
+    var link= "{$link}";
+    var imgUrl="{$root}{$stores_info.supp_logo}";
+    var desc= "{$desc}";
+    wx.ready(function () {
+        wx.onMenuShareTimeline({//朋友圈
+            title: title, // 分享标题
+            link: link, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: function () { 
+                // 用户确认分享后执行的回调函数
+                statis(2,1);
+            },
+            cancel: function () { 
+                // 用户取消分享后执行的回调函数
+                statis(2,2);
+            }
+        });
+        wx.onMenuShareAppMessage({//好友
+            title: title, // 分享标题
+            desc: desc, // 
+            link: link, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            type: '', // 分享类型,music、video或link，不填默认为link
+            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+            success: function () { 
+                // 用户确认分享后执行的回调函数
+                statis(1,1);    
+            },
+            cancel: function () { 
+                // 用户取消分享后执行的回调函数
+                statis(1,2);
+            }
+        });
+      
+        wx.onMenuShareQQ({
+            title: title, // 分享标题
+            desc: desc, // 分享描述
+            link: link, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: function () { 
+               // 用户确认分享后执行的回调函数
+                statis(4,1);
+            },
+            cancel: function () { 
+               // 用户取消分享后执行的回调函数
+                statis(4,2);
+            }
+        });
+        wx.onMenuShareWeibo({
+            title: title, // 分享标题
+            desc: desc, // 分享描述
+            link: link, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: function () { 
+               // 用户确认分享后执行的回调函数
+                statis(3,1);
+            },
+            cancel: function () { 
+                // 用户取消分享后执行的回调函数
+                statis(3,2);
+            }
+        });
+        {if $goods.is_nearby }
+        wx.checkJsApi({
+            jsApiList: [
+                'getLocation'
+            ],
+            success: function (res) {
+                 //alert(JSON.stringify(res));
+                // alert(JSON.stringify(res.checkResult.getLocation));
+                if (res.checkResult.getLocation == false) {
+                    alert('你的微信版本太低，不支持微信JS接口，请升级到最新的微信版本！');
+                    return;
+                }
+            }
+        });
+        wx.getLocation({
+            success: function (res) {
+                var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
+                var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
+                var speed = res.speed; // 速度，以米/每秒计
+                var accuracy = res.accuracy; // 位置精度
+                $.ajax({
+                    type:"post",//请求类型
+                    url:"goods.php",//服务器页面地址
+                    data:"act=save_location&lat="+latitude+"&lng="+longitude,
+                    dataType:"json",//服务器返回结果类型(可有可无)
+                    error:function(){//错误处理函数(可有可无)
+                        //alert("ajax出错啦");
+                    },
+                    success:function(data){
+                        
+                        if(data.error==1){
+                            //alert('错误'+data.message);
+                        }else{
+                            //document.getElementById('loading').style.display='none';
+                            
+                        }
+                    }
+                });
+            },
+            cancel: function (res) {
+                alert('用户拒绝授权获取地理位置');
+            }
+        });
+        {/if}   
+        
+    });
+    
+    function statis(share_type,share_status){
+        $.ajax({
+            type:"post",//请求类型
+            url:"share.php",//服务器页面地址
+            data:"act=link&share_status="+share_status+"&share_type="+share_type+"&link_url={$link2}",
+            dataType:"json",//服务器返回结果类型(可有可无)
+            error:function(){//错误处理函数(可有可无)
+                //alert("ajax出错啦");
+            },
+            success:function(data){
+                
+            }
+        });
+    }
+
+</script>
+</body>
+</html>
