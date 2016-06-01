@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[xigua_beauty_wsq.plugin]]></item>
+	<item id="RevisionID"><![CDATA[41788]]></item>
+	<item id="SN"><![CDATA[2016011823UMUM7OF7Fg]]></item>
+	<item id="RevisionDateline"><![CDATA[1451898001]]></item>
+	<item id="Data">
+		<item id="/api.class.php"><![CDATA[3d0ab17f9eff185088bc4029454f51d9]]></item>
+		<item id="/function.php"><![CDATA[9b2e728b6d6017bc85db4be0c0df10f2]]></item>
+		<item id="/discuz_plugin_xigua_beauty_wsq_TC_UTF8.xml"><![CDATA[403b75301cd89d44a339851b7ddbe248]]></item>
+		<item id="/uninstall.php"><![CDATA[6d92f808ec0a12521939f30a5734b848]]></item>
+		<item id="/install.php"><![CDATA[323594f464cc3b5802ecf5325ee407e3]]></item>
+		<item id="/cache.inc.php"><![CDATA[65b63880e5015c7f51134afbead15ba4]]></item>
+		<item id="/discuz_plugin_xigua_beauty_wsq_TC_BIG5.xml"><![CDATA[3ca85876888ec90b24478b847640b9ba]]></item>
+		<item id="/cron/cron_clear.php"><![CDATA[257cc9bf0ba017e9e4dd79b3cf30cea5]]></item>
+		<item id="/discuz_plugin_xigua_beauty_wsq_SC_UTF8.xml"><![CDATA[5ecf76f0a8b22929c4ad3e350d5edf06]]></item>
+		<item id="/app.inc.php"><![CDATA[4982bb93e7278f0a81cee69c18b9cd41]]></item>
+		<item id="/eye.png"><![CDATA[d8a0be5efb3a4ad63c091b15bf5ba2ac]]></item>
+		<item id="/gender1.png"><![CDATA[7d408c55852ffcfef444a9d671661f38]]></item>
+		<item id="/discuz_plugin_xigua_beauty_wsq_SC_GBK.xml"><![CDATA[6f2664c5f3fe4ff1682756180830b75d]]></item>
+	</item>
+</root>

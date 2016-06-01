@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>店铺管理平台</title>
+	<link href="templates/css/login.css" rel="stylesheet" type="text/css" />
+{if $auto_redirect}
+<meta http-equiv="refresh" content="3;URL={$message.back_url}" />
+{/if}	
+</head>
+<body>
+	
+	<div class="logintop">
+		<h1 class="loginlogo" title="店铺管理平台">店铺管理平台</h1>
+	</div>
+	<div class="loginbox">
+  
+  <div align="center">
+          <div style="margin:30px auto;">
+          <p style="font-size: 16px; font-weight:bold; color: #2baa00;">{$message.content}</p>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <!-- {if $message.url_info} -->
+              <!--{foreach from=$message.url_info key=info item=url}-->
+              <p><a href="{$url}">{$info}</a></p><br />
+              <!--{/foreach}-->
+            <!--{/if}-->
+            </div>
+        </div>
+	</div>
+	
+	<div class="loginfoot">
+<!--		<p><b>您不是代理商？ 您点击<a href="./../business_user.php">申请</a>，成为我们的代理商。</b></p>
+-->		<p> copyright&copy;2005-2014 版权所有 www.xaphp.cn &nbsp; </p>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+.mwt-cl {width:100%;min-height:300px;padding-left:200px;}
+.mwt-cl-left {float:left;margin-left:-200px;width:180px;}
+
+.fixtop {position:fixed;top:0px;_position:absolute;_top:expression(eval(document.documentElement.scrollTop));}

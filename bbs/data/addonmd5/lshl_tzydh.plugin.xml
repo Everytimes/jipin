@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[lshl_tzydh.plugin]]></item>
+	<item id="RevisionID"><![CDATA[56927]]></item>
+	<item id="SN"><![CDATA[20160120236KOQojLAOq]]></item>
+	<item id="RevisionDateline"><![CDATA[1445176804]]></item>
+	<item id="Data">
+		<item id="/pic/1.png"><![CDATA[5b414278496e55682dc13c9bd3d48e79]]></item>
+		<item id="/pic/3.png"><![CDATA[b521755142c484d508ab313ad29d98fe]]></item>
+		<item id="/pic/4.png"><![CDATA[e4e4039ee2333d48b2fd87fd3cca8795]]></item>
+		<item id="/pic/2.png"><![CDATA[4058fd99256d24e8b3fcf095b779e139]]></item>
+		<item id="/api.class.php"><![CDATA[3462a543725f5303f8340ac441c0cc99]]></item>
+		<item id="/lshl.inc.php"><![CDATA[9c58de7f8054fccb270f2cf449034fb4]]></item>
+		<item id="/uninstall.php"><![CDATA[55d76d5045681daf924e770e54d56a10]]></item>
+		<item id="/install.php"><![CDATA[263d5d1cc1d41d37011b97449234332d]]></item>
+		<item id="/discuz_plugin_lshl_tzydh_SC_GBK.xml"><![CDATA[30ef3fc2effec89055b69859d365f818]]></item>
+		<item id="/discuz_plugin_lshl_tzydh_SC_UTF8.xml"><![CDATA[bb79061ab4f45518a7439fd6635704e1]]></item>
+	</item>
+</root>

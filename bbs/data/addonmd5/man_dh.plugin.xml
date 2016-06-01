@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[man_dh.plugin]]></item>
+	<item id="RevisionID"><![CDATA[56303]]></item>
+	<item id="SN"><![CDATA[2016012023KZ1M1HHdbh]]></item>
+	<item id="RevisionDateline"><![CDATA[1444057203]]></item>
+	<item id="Data">
+		<item id="/help.inc.php"><![CDATA[e57f8f0476860094c5dd12a1b1c9abce]]></item>
+		<item id="/template/images/subnav_icon1.png"><![CDATA[7e6d354d8789c6d25af497d4a5def30c]]></item>
+		<item id="/template/images/subnav_icon2.png"><![CDATA[518a8dfc93c273605716b0df27e65be2]]></item>
+		<item id="/template/images/subnav_icon3.png"><![CDATA[8236f008b1e298ac823312fb37f433d1]]></item>
+		<item id="/template/images/subnav_icon4.png"><![CDATA[307e437ef00aeedcd0d74d70869fd066]]></item>
+		<item id="/template/subnav.htm"><![CDATA[768277e68fe614b3f807fbb4e86504ec]]></item>
+		<item id="/nv_core.class.php"><![CDATA[b74fb5ed23187182e01a7d95985000ab]]></item>
+		<item id="/discuz_plugin_man_dh_SC_UTF8.xml"><![CDATA[98e95540af3f2fa7943994f4cc7f70c0]]></item>
+	</item>
+</root>

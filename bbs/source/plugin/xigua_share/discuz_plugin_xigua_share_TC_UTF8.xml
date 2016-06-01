@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2]]></item>
+	<item id="Time"><![CDATA[2015-01-13 02:17]]></item>
+	<item id="From"><![CDATA[西瓜社區 (http://115.28.190.3/demo/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[【西瓜】微社區分享]]></item>
+			<item id="identifier"><![CDATA[xigua_share]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[xigua_share/]]></item>
+			<item id="copyright"><![CDATA[西瓜先生]]></item>
+			<item id="version"><![CDATA[5.20150627]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[app]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[更多西瓜應用]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[風格]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[styles]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[0=默認
+1=清新]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[內容頁分享按鈕]]></item>
+				<item id="description"><![CDATA[選擇內容頁分享按鈕]]></item>
+				<item id="variable"><![CDATA[btn2]]></item>
+				<item id="type"><![CDATA[selects]]></item>
+				<item id="extra"><![CDATA[1=微信
+2=微博
+3=QQ好友
+4=QQ空間
+5=騰訊微博
+6=人人
+7=豆瓣]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[1]]></item>
+					<item id="1"><![CDATA[2]]></item>
+					<item id="2"><![CDATA[3]]></item>
+					<item id="3"><![CDATA[4]]></item>
+					<item id="4"><![CDATA[5]]></item>
+					<item id="5"><![CDATA[6]]></item>
+					<item id="6"><![CDATA[7]]></item>
+				</item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[內容頁分享提示]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[btn2_before]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[分享到:]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[顯示位置]]></item>
+				<item id="description"><![CDATA[選擇首貼上方，請到“微信登錄”的“接口”設置中調整接口“viewthread_threadTop”顯示順序，讓本插件排在首位。
+選擇首貼下方，請到“微信登錄”的“接口”設置中調整接口“viewthread_threadBottom”顯示順序，讓本插件排在首位。]]></item>
+				<item id="variable"><![CDATA[pos]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=內容頁首帖內容上方
+2=內容頁首帖內容下方]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[首貼上方位置下沉]]></item>
+				<item id="description"><![CDATA[僅位置選擇圖標為“小”時有效。]]></item>
+				<item id="variable"><![CDATA[down]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[內容頁分享按鈕顯示文字]]></item>
+				<item id="description"><![CDATA[開啟後，內容頁分享按鈕下方有漢字出現。
+僅“圖標大小”選擇“大”時有效有效。]]></item>
+				<item id="variable"><![CDATA[btn2_font]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[圖標大小]]></item>
+				<item id="description"><![CDATA[圖標選擇“小”時，居中失效。]]></item>
+				<item id="variable"><![CDATA[size]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[1=小
+0=大]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[99]]></item>
+				<item id="title"><![CDATA[版標右側文字]]></item>
+				<item id="description"><![CDATA[版標右鏈接文字，可以將要分享的鏈接或活動等放這里。
+關注鏈接可以在這里設置，也可以參照http://www.discuz.net/thread-3597485-1-1.html 設置]]></item>
+				<item id="variable"><![CDATA[topfont]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[100]]></item>
+				<item id="title"><![CDATA[版標右鏈接地址]]></item>
+				<item id="description"><![CDATA[鏈接地址http://開頭，可以將要分享的鏈接或活動等放這里。
+關注鏈接可以在這里設置，也可以參照http://www.discuz.net/thread-3597485-1-1.html 設置]]></item>
+				<item id="variable"><![CDATA[toplink]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[101]]></item>
+				<item id="title"><![CDATA[居中]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[center]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[102]]></item>
+				<item id="title"><![CDATA[漂浮]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[float]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[0=不漂浮
+1=樣式1
+2=樣式2]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[103]]></item>
+				<item id="title"><![CDATA[漂浮關閉按鈕顏色]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[cancel_color]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[104]]></item>
+				<item id="title"><![CDATA[漂浮關閉按鈕背景]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[cancel_bg]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[105]]></item>
+				<item id="title"><![CDATA[漂浮框位置]]></item>
+				<item id="description"><![CDATA[top或bottom只需填一個。格式:top:20px; 
+left或right只需填一個。格式:right:10px;
+如︰left:20px;bottom:60px; 表示在左下角
+或 right:10px;bottom:60px; 表示在右下角]]></item>
+				<item id="variable"><![CDATA[float_pos]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[right:10px;bottom:90px;]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[106]]></item>
+				<item id="title"><![CDATA[漂浮框透明度]]></item>
+				<item id="description"><![CDATA[0-100 越大越不透明]]></item>
+				<item id="variable"><![CDATA[float_opacity]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[90]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[107]]></item>
+				<item id="title"><![CDATA[漂浮引導文字]]></item>
+				<item id="description"><![CDATA[顯示在右上角的關注引導文字，留空則不顯示。
+如︰關注公眾號]]></item>
+				<item id="variable"><![CDATA[guideword]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[108]]></item>
+				<item id="title"><![CDATA[公眾號或引導鏈接]]></item>
+				<item id="description"><![CDATA[如填寫了“關注引導”,必須填上公眾號名稱或引導鏈接（必須http://開頭）]]></item>
+				<item id="variable"><![CDATA[gzname]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="l0"><![CDATA[微信]]></item>
+				<item id="l1"><![CDATA[微博]]></item>
+				<item id="l2"><![CDATA[好友]]></item>
+				<item id="l3"><![CDATA[空間]]></item>
+				<item id="l4"><![CDATA[騰訊]]></item>
+				<item id="l5"><![CDATA[人人]]></item>
+				<item id="l6"><![CDATA[豆瓣]]></item>
+				<item id="cancel"><![CDATA[取消]]></item>
+				<item id="back"><![CDATA[返回]]></item>
+				<item id="reply"><![CDATA[回復]]></item>
+				<item id="dot"><![CDATA[●]]></item>
+				<item id="share"><![CDATA[分享]]></item>
+				<item id="gzhao"><![CDATA[微信公眾號︰]]></item>
+				<item id="gzdesc"><![CDATA[點擊微信首頁右上角加號“+”<br>選擇“添加朋友”，長按並粘貼 %s，<br>搜索進入公眾號介紹頁，點擊底部“關注”。]]></item>
+				<item id="know"><![CDATA[知道了]]></item>
+				<item id="copyts"><![CDATA[請在微信客戶端中<br>搜索並添加微信號]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="upgradefile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

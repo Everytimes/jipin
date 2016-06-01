@@ -1,0 +1,187 @@
+table *, table input, table button{
+  font-size:12px;
+}
+table{
+  table-layout:fixed;
+  width:100%;
+  margin:0 auto;
+  border-collapse:collapse;
+}
+.form{
+  width:600px;
+  height:100%;
+  background:#FFF;
+  overflow-y:auto;
+}
+.table_purview{
+}
+.table_purview tr, .table_purview th, .table_purview td{
+  background:url(../images/hr.png) 0 bottom repeat-x;
+  position:relative;
+}
+.table_purview th, .table_purview .th{
+  padding:7px 10px 9px;
+  font-weight:100;
+  background-color:#F9F9F9;
+  width:100px;
+  text-align:right;
+  border-left:0;
+}
+.table_purview td{
+  padding:5px 10px 7px 15px;
+  border-left:1px solid #E5E3E3;
+}
+.table_purview tr:hover th,
+.table_purview tr:hover td{
+  background-color:#F9F9F9;
+}
+.table_purview tr.hd_bar td{
+  border:0 none;
+  background-color:#F9F9F9;
+}
+.table_purview tr.hd_bar th{
+  color:#000;
+  font-weight:700;
+  background-color:#F9F9F9;
+}
+.table_purview tr.hd td, .table_purview tr.hd th{
+  background-color:#FFFEEE;
+}
+.table_purview th em, .table_purview .th em{
+  display: block;
+  color:#9B9B9B;
+}
+
+.button1, .button2{
+  border-radius:1px;
+  display:inline-block;
+  padding:4px 10px;
+  background:#CF754F;
+  -webkit-box-shadow:0 2px #B45831;
+  box-shadow:0 2px #B45831;
+  color:#FFF;
+  text-align:center;
+  border:0;
+  outline:0;
+  -webkit-transition:all .1s ease;
+  -moz-transition:all .1s ease;
+  -o-transition:all .1s ease;
+  transition:all .1s ease;
+  cursor:pointer;
+}
+.button2{
+  color:rgba(255, 255, 255, 1);
+  background:#52A0C7;
+  -webkit-box-shadow:0 2px #3784AA;
+  box-shadow:0 2px #3784AA;
+}
+.button1:hover, .button1:active{ }
+.button2:hover, .button2:active{ }
+.button1:active, .button2:active{
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  -webkit-transform:translateY(2px);
+  -moz-transform:translateY(2px);
+  -o-transform:translateY(2px);
+  -ms-transform:translateY(2px);
+  transform:translateY(2px);
+}
+input[type=radio]{
+  margin-top:-2px !important;
+}
+input[type=checkbox]{
+  vertical-align: middle;
+  margin: 0 5px 1px 0;
+  padding: 0;
+}
+input[type=radio], input[type=checkbox]{
+  border:none;
+  background:none;
+  vertical-align:middle;
+}
+.file{
+  opacity:0;
+  filter:alpha(opacity=0);
+  display:inline-block;
+  width:60px;
+  height:30px;
+  background:red;
+  position:absolute;
+  z-index:99;
+  cursor:pointer;
+}
+#ajaxloading{
+  display:inline-block;
+  height:31px;
+  margin-left:55px;
+  margin-right:7px;
+  overflow:hidden;
+  float:left;
+}
+#ajaxloading-img{
+  height:auto;
+  width:100%;
+  display:none;
+  padding:11px 0 0 0;
+}
+#ajaxtip1, #ajaxtip2{
+  color:#F2683E;
+  line-height:31px;
+  height:31px;
+  overflow:hidden;
+  float:left;
+}
+#ajaxtip1 img,
+#ajaxtip2 img{
+  height:100%;
+}
+@-webkit-keyframes rotate{
+  from{ -webkit-transform:rotate(0deg) }
+  to{ -webkit-transform:rotate(360deg) }
+}
+@keyframes rotate{
+  from{ -webkit-transform:rotate(0deg) }
+  to{ -webkit-transform:rotate(360deg) }
+}
+@-moz-keyframes rotate{
+  from{ -webkit-transform:rotate(0deg) }
+  to{ -webkit-transform:rotate(360deg) }
+}
+input, select, textarea{
+  -webkit-transition:all .1s ease;
+  -moz-transition:all .1s ease;
+  -o-transition:all .1s ease;
+  transition:all .1s ease;
+  color:#555;
+}
+select{
+  min-width:90px;
+}
+input[type=text], input[type=number], textarea, select{
+  padding:4px 4px;
+  font-size:12px;
+  line-height:18px;
+  border:1px solid #CCC;
+  background-color:#FFF;
+  box-shadow:2px 2px 2px #F0F0F0 inset;
+  vertical-align:middle;
+  margin:0;
+  font-family:inherit;
+  border-radius:1px;
+  outline:0;
+}
+input[type=text]{
+  width:400px;
+}
+input[type=text]:focus,textarea:focus, select:focus{
+  outline:2px solid #7BBFF2;
+  border-color:#52A0C7;
+}
+
+
+.delbg, .del{margin:0 5px 0 2px;cursor: pointer; font-size: 12px;background: url("../images/close.png") no-repeat center center; background-size: 18px 18px; width: 18px;height: 18px; display: inline-block; text-indent: -9999px;}
+.delbg{padding-left:15px;line-height:31px;cursor:pointer;height:auto !important;}
+
+.short{width:50px!important;}
+.mini{width:80px!important;}
+.normal{width:220px!important;}

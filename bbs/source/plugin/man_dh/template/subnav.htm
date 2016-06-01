@@ -1,0 +1,100 @@
+<!--{block return}-->
+
+<style type="text/css">
+<!--
+.xl_nav {width: {$nav_width}px;	margin: 0 auto;padding-top: {$nav_padding_top}px;padding-bottom: {$nav_padding_bottom}px;background: {$nav_bg};border: 1px solid {$nav_border_color};{if $nav_border == 1}border-top: none;{/if}{if $nav_border == 2}border: none;{/if}{if $nav_border == 4}border-top: none;border-bottom: none;{/if}{if $nav_border == 5}border-left: none;border-right: none;{/if}border-radius: {$nav_border_radius};overflow: hidden;font-size: 14px;{if !empty($nav_box_shadow)}box-shadow:{$nav_box_shadow};{/if}margin-bottom:{$nav_margin_bottom}px;}
+.xl_nav .col_4{width: 24.7%;float: left;}
+.xl_nav .col_3{width: 33%;float: left;}	
+.icon_wp{width: 26.5%;float: left;text-align: center;}
+.icon_wp dd{width: 100%;height: {$nav_icon_height}px;line-height: {$nav_icon_height}px;{if $nav_t_open != 2}text-indent: -9999px;{/if}}	
+.icon_wp dd a{display: block;width: 100%;height: {$nav_icon_height}px;}
+.icon_wp dt{text-align: right;{if $nav_t_open != 3}display: none;{/if}}
+.icon_wp dt a{margin: 0 11px 0 0;*+margin: 0 6px 0 0;}
+.subul{width: 73%;padding-top:{$nav_li_padding_top}px;padding-bottom:{$nav_li_padding_bottom}px;float: right;}
+.col_3 .subul li{width: {if $nav_li_col == 1}33{else}49.7{/if}%;float: left;text-align: center;height: {$nav_li_height}px;line-height: {$nav_li_height}px;}
+{if $nav_col == 1}
+.col_4 .subul li{width: {if $nav_li_col == 1}33{else}49.7{/if}%;float: left;text-align: center;height: {$nav_li_height}px;line-height: {$nav_li_height}px;}
+{/if}
+.subul li a{color: {$nav_a_link};}
+.subul li a:hover{color: {$nav_a_hover};}
+.subul li a{display:inline-block;width:90%;height:{$nav_li_height}px;margin:0 auto;}
+
+.item_01 dd{background: {$nav_item1_bg};}
+.item_02 dd{background: {$nav_item2_bg}}
+.item_03 dd{background: {$nav_item3_bg};}	
+{if $nav_col == 1}
+.item_04 dd{background: {$nav_item4_bg};}
+{/if}
+{$nav_css}
+-->
+</style>
+
+<div class="xl_nav cl"> 
+<!--{if $nav_col == 1}-->
+	<div class="col_4 item_01">
+		<dl class="icon_wp">
+			<dd>{$nav_item1_t}</dd>	
+			<dt>{$nav_item1_t}</dt>
+		</dl>
+		<ul class="subul">
+			{$nav_item1_li}
+		</ul>
+	</div>
+	<div class="col_4 item_02">
+		<dl class="icon_wp">
+			<dd>{$nav_item2_t}</dd>	
+			<dt>{$nav_item2_t}</dt>
+		</dl>
+		<ul class="subul">
+			{$nav_item2_li}
+		</ul>
+	</div>
+	<div class="col_4 item_03">
+		<dl class="icon_wp">
+			<dd>{$nav_item3_t}</dd>	
+			<dt>{$nav_item3_t}</dt>
+		</dl>
+		<ul class="subul">
+			{$nav_item3_li}
+		</ul>
+	</div>	
+	<div class="col_4 item_04">
+		<dl class="icon_wp">
+			<dd>{$nav_item4_t}</dd>	
+			<dt>{$nav_item4_t}</dt>
+		</dl>
+		<ul class="subul">
+			{$nav_item4_li}
+		</ul>
+	</div>	
+<!--{else}-->
+	<div class="col_3 item_01">
+		<dl class="icon_wp">
+			<dd>{$nav_item1_t}</dd>	
+			<dt>{$nav_item1_t}</dt>
+		</dl>
+		<ul class="subul">
+			{$nav_item1_li}
+		</ul>
+	</div>
+	<div class="col_3 item_02">
+		<dl class="icon_wp">
+			<dd>{$nav_item2_t}</dd>	
+			<dt>{$nav_item2_t}</dt>
+		</dl>
+		<ul class="subul">
+			{$nav_item2_li}
+		</ul>
+	</div>
+	<div class="col_3 item_03">
+		<dl class="icon_wp">
+			<dd>{$nav_item3_t}</dd>	
+			<dt>{$nav_item3_t}</dt>
+		</dl>
+		<ul class="subul">
+			{$nav_item3_li}
+		</ul>
+	</div>	
+<!--{/if}-->
+</div>
+<!--{/block}-->

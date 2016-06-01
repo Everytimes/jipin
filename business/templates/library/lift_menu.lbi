@@ -1,0 +1,193 @@
+<div class="headcon">
+
+		<h1 title="商家管理平台">商家管理平台</h1>
+
+		<div class="headright">
+
+			<div class="welcome"></div>
+
+			<div class="operate"><a href="?act=logout">退出登录</a>
+            {if $smarty.session.role_id eq ''}
+            <a href="suppliers.php?act=edit_password">修改密码</a>
+            {/if}
+            <!-- 
+            <a href="/store.php?id={$suppliers_id}" target="_blank">我的店铺</a>
+             -->
+            </div>
+
+		</div>
+
+	</div>
+<!--div class="leftcon" id="leftcon"-->
+<div class="leftcon" >
+
+		<ul class="menu">
+
+			<li {if $action eq 'default'} class="choise"{/if}>
+
+				<a href="suppliers.php?act=default">欢迎页</a>
+
+			</li>
+            {if $suppliers_array.is_check eq 1}
+            
+            <li >
+				<a href="javascript:;" class="article">商品管理</a>
+
+                <div class="second_menu" >
+
+                
+                   <a href="?act=my_goods" class="goods {if $action eq 'my_goods'}choise{/if}">商品列表</a>
+
+                    
+                   <a href="?act=add_goods" class="goods {if $action eq 'add_goods'}choise{/if}">新增商品</a>
+
+                    
+                   <a href="?act=goods_trash" class="goods {if $action eq 'goods_trash'}choise{/if}">商品回收站</a>
+
+                    
+                </div>
+
+            </li>
+            
+	              
+						<li >
+				<a href="javascript:;" class="article">订单管理</a>
+
+                <div class="second_menu" >
+
+                
+                   <a href="?act=goods_order" class="goods  {if $action eq 'goods_order'}choise{/if}">发货订单</a>
+				   <a href="?act=goods_order2" class="goods  {if $action eq 'goods_order2'}choise{/if}">自提订单</a>
+                    <!-- 
+                    <a href="?act=delivery" class="goods  {if $action eq 'delivery'}choise{/if}">到店提货</a>
+                     
+                   <a href="?act=delivery_list" class="goods  {if $action eq 'delivery_list'}choise{/if}">提货管理</a>
+                   -->
+
+                    <a href="?act=shipping_delivery_list" class="goods  {if $action eq 'shipping_delivery_list'}choise{/if}">发货管理</a>
+                </div>
+
+            </li>
+            
+	              
+						<li >
+				<a href="javascript:;" class="article">结算管理</a>
+
+                <div class="second_menu" >
+
+                
+                   <a href="?act=bank_config" class="goods  {if $action eq 'bank_config'}choise{/if}">开户行设置</a>
+
+                    
+                   <a href="?act=my_order" class="goods  {if $action eq 'my_order'}choise{/if}">订单结算</a>
+
+                </div>
+
+            </li>
+            
+	              
+						<li >
+				<a href="javascript:;" class="article">商家管理</a>
+
+                <div class="second_menu" >
+
+                
+                   <a href="?act=supp_info" class="goods  {if $action eq 'supp_info'}choise{/if}">店铺设置</a>
+
+                    
+                   <a href="?act=bunus" class="goods  {if $action eq 'bunus'}choise{/if}">优惠券管理</a>
+
+                    
+                   <a href="?act=ad" class="goods  {if $action eq 'ad'}choise{/if}">广告轮播</a>
+
+                    
+                   <a href="?act=supp_shipping" class="goods  {if $action eq 'supp_shipping'}choise{/if}">配送方式</a>
+
+                    
+                </div>
+
+            </li>
+            
+	              
+						<li >
+				<a href="javascript:;" class="article">系统设置</a>
+
+                <div class="second_menu" >
+
+                
+                   <a href="?act=edit_password" class="goods  {if $action eq 'edit_password'}choise{/if}">密码修改</a>
+
+                    
+                </div>
+
+            </li>
+            
+	              
+						<li >
+				<a href="javascript:;" class="article">统计报表</a>
+
+                <div class="second_menu" >
+
+                
+                   <a href="?act=order_stats" class="goods  {if $action eq 'order_stats'}choise{/if}">订单统计</a>
+
+                    
+                   <a href="?act=sale_list" class="goods  {if $action eq 'sale_list'}choise{/if}">销售明细</a>
+
+                    
+                   <a href="?act=sale_order" class="goods  {if $action eq 'sale_order'}choise{/if}">销售排行</a>
+
+                    
+                </div>
+
+            </li>
+            
+             
+
+     		{else}
+            	<li >
+				<a href="javascript:;" class="goods">店铺管理</a>
+
+                <div class="second_menu" {if $action neq ''}{else} style="display:none;"{/if}>
+                   <a href="?act=supp_info" class="goods choise">账号设置</a>
+                </div>
+            </li>
+            {/if}
+
+		</ul>
+
+	</div>
+
+    
+
+<script>
+
+$(document).ready(function(){
+
+  $(".menu li").click(function(){
+
+  		if($(this).find(".second_menu").css("display")=='none')
+
+		{
+
+			$(this).find(".second_menu").slideDown("slow");
+
+		}
+
+		else{
+
+			$(this).find(".second_menu").slideUp("slow");
+
+		}
+
+	});
+
+});	
+
+
+
+
+
+
+
+</script>

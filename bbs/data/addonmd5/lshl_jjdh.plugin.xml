@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[lshl_jjdh.plugin]]></item>
+	<item id="RevisionID"><![CDATA[56722]]></item>
+	<item id="SN"><![CDATA[20160120228Pv8fPGJF7]]></item>
+	<item id="RevisionDateline"><![CDATA[1445320801]]></item>
+	<item id="Data">
+		<item id="/pic/1.png"><![CDATA[5b414278496e55682dc13c9bd3d48e79]]></item>
+		<item id="/pic/6.png"><![CDATA[a70c7c8053e8b6944c778c0f11889edb]]></item>
+		<item id="/pic/5.png"><![CDATA[8862ab7a172dcb12cf9782576e3618d2]]></item>
+		<item id="/pic/top.jpg"><![CDATA[0ba89755ce5b4bef595c3efbb2a2dcd5]]></item>
+		<item id="/pic/3.png"><![CDATA[b521755142c484d508ab313ad29d98fe]]></item>
+		<item id="/pic/7.png"><![CDATA[6dda8c035ae911381786d097fa11bb9c]]></item>
+		<item id="/pic/8.png"><![CDATA[a85353943014a1a08309b8468270ff8e]]></item>
+		<item id="/pic/4.png"><![CDATA[e4e4039ee2333d48b2fd87fd3cca8795]]></item>
+		<item id="/pic/2.png"><![CDATA[4058fd99256d24e8b3fcf095b779e139]]></item>
+		<item id="/api.class.php"><![CDATA[1b61788c8bd7e370a998ea7b0f788bca]]></item>
+		<item id="/lshl.inc.php"><![CDATA[82c264765aa876bfcf0813e96ce46815]]></item>
+		<item id="/uninstall.php"><![CDATA[3d69ea0ff17fa5fe50366d90ff451b39]]></item>
+		<item id="/install.php"><![CDATA[f067f52089632a283b8027ed03eeb599]]></item>
+		<item id="/discuz_plugin_lshl_jjdh_SC_GBK.xml"><![CDATA[81c18533d1c1b1832f69a0b7863e804c]]></item>
+		<item id="/discuz_plugin_lshl_jjdh_SC_UTF8.xml"><![CDATA[62637a855fee0664c70bbbc22500f320]]></item>
+	</item>
+</root>

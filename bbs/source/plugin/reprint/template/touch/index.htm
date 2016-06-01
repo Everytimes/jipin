@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>{$lang_title}</title>
+  <link rel="stylesheet" href="<!--{$plugin_path}-->/template/css/main.css">
+  <link rel="stylesheet" href="<!--{$plugin_path}-->/template/libs/amazeui/2.4.2/amazeui.min.css">
+  <script src="<!--{$plugin_path}-->/template/libs/requirejs/2.1.9/require.js"></script>
+  <script src="<!--{$plugin_path}-->/template/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    var siteurl = "<!--{$siteurl}-->";
+    var ajaxapi = "<!--{$plugin_path}-->/index.php?version=4&module=";
+    var src = "<!--{$plugin_path}-->/template/src-1458046665/";
+    var forums_sel = '{$forums_sel}';
+    require.config({
+        baseUrl: src,
+        packages: [
+			{name:'mwt', location:'<!--{$plugin_path}-->/template/libs/mwt/2.6.0', main:'mwt.min'},
+			{name:'mt', location:'<!--{$plugin_path}-->/template/libs/mt/1.0.0', main:'main'},
+			{name:'er', location:'<!--{$plugin_path}-->/template/libs/er/3.0.3', main:'main'}
+        ]
+    });
+	define("main",function(require){
+	    require("mwt");
+        return { init:function(){
+            var pathList = [
+                "/index/index",
+                "/list/index",
+                "/"
+            ];
+            require("mt").init(pathList);
+        }};
+    });
+    jQuery(document).ready(function($) {
+		require(['main'], function (main) {
+			main.init();
+		});
+    });
+    function active_tab(idx)
+    {
+        jQuery("[name='navtab']").removeClass("am-active");
+        jQuery("[name='navtab']:eq("+idx+")").addClass("am-active");
+    }
+    function showmsg(msg) {
+        jQuery('#msgdiv-box').show();
+        jQuery('#msgdiv').html(msg);
+    }
+    function hidemsg() {
+        setTimeout(function(){
+	        jQuery('#msgdiv-box').fadeOut("fast");
+        },1000);
+    }
+  </script>
+</head>
+<body style='position:absolute;left:0;right:0;top:0;bottom:0;'>
+  <ul class="am-nav am-nav-pills am-nav-justify"
+      style="background: #eee;border-bottom: solid 1px #ccc;position:absolute;left:0;right:0;top:0;height:38px;">
+    <li name='navtab'><a href="#/index">{$lang_home}</a></li>
+    <li name='navtab'><a href="#/list">{$lang_list}</a></li>
+  </ul>
+  <div id='frame-body' style='position:absolute;left:0;right:0;top:38px;bottom:0;overflow:auto;'>
+  </div>
+  <div id='msgdiv-box' style='position:fixed;top:0;bottom:0;left:0;right:0;z-index:999;display:none;text-align:center;'>
+    <div style='position:absolute;top:0;left:0;right:0;bottom:0;z-index:1;background-color:#222;filter:alpha(Opacity=70);opacity:.7;'></div>
+    <div id='msgdiv' style='top:50px;left:0;cursor:default;display:inline-block;position:relative;background-color:#fcf8e3;
+                            border-radius:4px;z-index:2;border:2px solid #faebcc;color:#8a6d3b;
+                            padding:10px 20px;'>
+    </div>
+  </div>
+</body>
+</html>

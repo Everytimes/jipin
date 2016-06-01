@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[ygteam_qqnews.plugin]]></item>
+	<item id="RevisionID"><![CDATA[57576]]></item>
+	<item id="SN"><![CDATA[2016012022adHgtwzUY2]]></item>
+	<item id="RevisionDateline"><![CDATA[1446958802]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_ygteam_qqnews_SC_GBK.xml"><![CDATA[c97ab302f70464ddfc90899dc7ac0848]]></item>
+		<item id="/img/qqpop_bg.png"><![CDATA[4637a53c5ea3f02e9d5dddf4144b1cd0]]></item>
+		<item id="/img/qqpop_bg_ie6.png"><![CDATA[3ed824e7f995c86af61286700d1c580b]]></item>
+		<item id="/hook.class.php"><![CDATA[aca27017767afb320c61d7787f4a73ae]]></item>
+		<item id="/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/discuz_plugin_ygteam_qqnews_TC_BIG5.xml"><![CDATA[3c8d36546effcdd5311b173499f3ce75]]></item>
+		<item id="/template/hook_footer.htm"><![CDATA[31b3429705f4b6a1e2b2b06a0dce6054]]></item>
+		<item id="/template/index.html"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/discuz_plugin_ygteam_qqnews_TC_UTF8.xml"><![CDATA[79c6b88a8b700eab55bf7c8e55322107]]></item>
+		<item id="/discuz_plugin_ygteam_qqnews_SC_UTF8.xml"><![CDATA[77090faf609d1b1c8c729ae48e942d44]]></item>
+	</item>
+</root>

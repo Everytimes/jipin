@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[linkp.plugin]]></item>
+	<item id="RevisionID"><![CDATA[59246]]></item>
+	<item id="SN"><![CDATA[2016011822111HAf1AZD]]></item>
+	<item id="RevisionDateline"><![CDATA[1449403203]]></item>
+	<item id="Data">
+		<item id="/uninstall.php"><![CDATA[a2b752a87ec64cb778b73d25be53daea]]></item>
+		<item id="/install.php"><![CDATA[5d400aa587c64da50b3e76303aee84b3]]></item>
+		<item id="/discuz_plugin_linkp_SC_GBK.xml"><![CDATA[90624e30f591c455c82a10e69d664c9a]]></item>
+		<item id="/discuz_plugin_linkp_TC_UTF8.xml"><![CDATA[78d3f380af05e45411f50c759df2fd57]]></item>
+		<item id="/template/list.htm"><![CDATA[efd959f86f220d9aff1d21b803107799]]></item>
+		<item id="/template/setting.htm"><![CDATA[6793913eed6a92f16a6afab21b0d7952]]></item>
+		<item id="/discuz_plugin_linkp_TC_BIG5.xml"><![CDATA[938957bcbaa742edcb7432599ac2aca3]]></item>
+		<item id="/discuz_plugin_linkp_SC_UTF8.xml"><![CDATA[636357a948b78e543a3dd571c04113c8]]></item>
+		<item id="/admincp.inc.php"><![CDATA[d19053f1d4ed07f86cbf5606bb75f7af]]></item>
+		<item id="/linkp.class.php"><![CDATA[99f69b25acb81f092e80853498fde505]]></item>
+	</item>
+</root>

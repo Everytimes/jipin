@@ -1,0 +1,87 @@
+<!--{block ygteam_html}-->
+<style>
+#ygteam_qqnews{font-family:"\\5FAE\8F6F\96C5\9ED1";width: 300px;max-height: 198px;overflow: hidden;position: fixed;bottom: 0;right: 0;border-radius: 2px;background-color: #fff;border: 1px solid {$st['bgcolor']};box-shadow: 0px 0px 10px rgba(0,0,0,0.3);_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))); font-size:12px; z-index:9999;display:none;}
+.qq_opc {opacity: .0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
+.qq_head {position:relative;height: 26px;overflow:hidden;background: {$st['bgcolor']};color: {$st['titlecolor']};line-height: 26px;font-size: 13px;padding-left: 28px;}
+.qq_head span{position:absolute;left:10px;top: 5px;width: 16px;height: 16px;background: url(./source/plugin/ygteam_qqnews/img/qqpop_bg.png) no-repeat right top;_background: url(./source/plugin/ygteam_qqnews/img/qqpop_bg_ie6.png) no-repeat right top;}
+.qq_head #qqbox_close {position:absolute;text-decoration: none;right: 6px;width: 11px;height: 11px;background: url(./source/plugin/ygteam_qqnews/img/qqpop_bg.png) no-repeat;_background: url(./source/plugin/ygteam_qqnews/img/qqpop_bg_ie6.png) no-repeat;text-indent:-999em;top: 7px;}
+.qq_cont{font-size: 12px;padding: 10px;line-height: 20px;height: 115px;}
+.qq_cont a{text-decoration: none;color:#666;}
+.qq_cont h3{font-weight: normal;font-size:16px;margin-bottom:6px;}
+.qq_cont h3 a{color:#000;}
+.qq_cont p{float:none;text-align:justify;font-size:12px;margin:0;text-indent:0;line-height:20px;}
+.qq_thumb{float: left;width: 110px;height: 115px;}
+.qq_foot{line-height: 32px;text-align: right;border-top: 1px solid #e7e5e6;padding-right: 10px;font-size: 12px;}
+.qq_foot a {text-decoration: none;color: {$st['bgcolor']};}
+span.qq_line {border-right: 1px solid #e7e5e6;margin: 0 10px;display:inline;_display: inline-block;}
+</style>
+<div id="ygteam_qqnews" oncontextmenu="return false" onselectstart="return false">
+<div class="qq_head"><span></span>$st['boxtitle']<a id="qqbox_close" target="_self" onclick="return closeqqbox();" href="#" title="{lang close}">X</a></div>
+<div class="clear"></div>
+<div class="qq_cont">
+<div class="qq_thumb"><a href="$st['newsurl']" target="_blank" rel="nofollow"><img src="$st['newsthumb']" width="100" height="115"></a></div>
+<h3><a href="$st['newsurl']" target="_blank" rel="nofollow">$st['newstitle']</a></h3>
+<p><a href="$st['newsurl']" target="_blank" rel="nofollow">$st['newscont']...</a></p></div>
+<div class="clear"></div>
+<div class="qq_foot"><a href="$st['newsurl']" target="_blank" rel="nofollow">{$st['txt_btn1']}</a><span class="qq_line"></span><a href="$st['newsurl']" rel="nofollow" target="_blank">{$st['txt_btn2']}</a></div>
+<div class="clear"></div>
+</div>
+<script>
+var ud;
+var ifclosed = getCookie('qqnews_closed');
+/** 获取COOKIE */
+function getCookie(cookiename) {
+	var result;
+	var mycookie = document.cookie;
+	var start2 = mycookie.indexOf(cookiename + "=");
+	if (start2 > -1) {
+		start = mycookie.indexOf("=", start2) + 1;
+		var end = mycookie.indexOf(";", start);
+		if (end == -1) {
+			end = mycookie.length;
+		}
+		result = unescape(mycookie.substring(start, end));
+	}
+	return result;
+}
+/** 设置COOKIE */
+function setCookie(cookiename, cookievalue, hours) {
+	var date = new Date();
+	date.setTime(date.getTime() + Number(hours) * 3600 * 1000);
+	document.cookie = cookiename + "=" + cookievalue + "; path=/;expires = " + date.toGMTString();
+}
+function showqqbox_js(){
+	document.getElementById("ygteam_qqnews").style.display = 'block';
+	<!--{if $st['dd_time'] > 0}-->setTimeout(qqbox_dou,{$st['dd_time']});<!--{/if}-->
+}
+function closeqqbox(){
+	document.getElementById("ygteam_qqnews").style.display = 'none';
+	<!--{if $st['limittime'] > 0}-->setCookie('qqnews_closed','yes',{$st['limittime']});<!--{/if}-->
+	return false;
+}
+<!--{if $st['dd_time'] > 0}-->
+function qqbox_dou(){
+	var a=['marginRight','marginBottom'],b=0,c=0,d=0;
+	ud=setInterval(function(){
+		b++;
+		c = b%4<2?'0px':'4px';
+		d = a[b%2];
+		if(b%2 == '0'){
+			document.getElementById('ygteam_qqnews').style.marginRight=c;
+		}else{
+			document.getElementById('ygteam_qqnews').style.marginBottom=c;
+		}
+		if(b>15){clearInterval(ud);b=0}
+	},32);
+	setTimeout(clear_qqbox_dou,1000);
+}
+function clear_qqbox_dou(){
+	clearInterval(ud);
+	setTimeout(showqqbox_js,{$st['dd_time']});
+}
+<!--{/if}-->
+if(!ifclosed || ifclosed != 'yes'){
+setTimeout(showqqbox_js,3000);
+}
+</script>
+<!--{/block}-->

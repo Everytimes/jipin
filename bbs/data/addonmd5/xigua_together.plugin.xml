@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[xigua_together.plugin]]></item>
+	<item id="RevisionID"><![CDATA[41949]]></item>
+	<item id="SN"><![CDATA[2016022114cr24Jn1o0b]]></item>
+	<item id="RevisionDateline"><![CDATA[1441594801]]></item>
+	<item id="Data">
+		<item id="/api.class.php"><![CDATA[5b41411dbc258b8b4a196ea8cbb04a59]]></item>
+		<item id="/discuz_plugin_xigua_together_TC_UTF8.xml"><![CDATA[4631715da39c3489b1c45e15d290bca5]]></item>
+		<item id="/discuz_plugin_xigua_together_SC_GBK.xml"><![CDATA[436f519f766298723823360288f988ec]]></item>
+		<item id="/uninstall.php"><![CDATA[d75429d8de208a0c8300732c13a7d10c]]></item>
+		<item id="/install.php"><![CDATA[fb00b14d4092a502ab92fb0d5d5442d7]]></item>
+		<item id="/app.inc.php"><![CDATA[2523d34c56f502bc8008df0434d0626f]]></item>
+		<item id="/discuz_plugin_xigua_together_TC_BIG5.xml"><![CDATA[256926bc55ce3ae929a854be7b230a98]]></item>
+		<item id="/tag.png"><![CDATA[93bd81075b3276757b6d588a29a165c3]]></item>
+		<item id="/discuz_plugin_xigua_together_SC_UTF8.xml"><![CDATA[403e238ec1de419ca899d27e7d14b157]]></item>
+	</item>
+</root>

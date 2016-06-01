@@ -1,0 +1,41 @@
+<!--{if $_G['forum']['recommendlist']['images'] && $_G['forum']['modrecommend']['imagenum']}-->
+    <!--recommendlistfocus-->
+   
+    <div class="recommendlistfocus cl" style="margin:0 auto">
+		<div id="pic">
+			<ul>
+            
+            <!--{loop $_G['forum']['recommendlist']['images'] $k $imginfo}-->
+            <li><a href="forum.php?mod=viewthread&tid=$imginfo[tid]" target="_blank"><img src="$imginfo[filename]"></a> </li>
+		<!--{/loop}-->
+			</ul>
+		</div>
+		<div class="tip-bg"></div>
+		<div id="tip">
+			<ul>
+            <!--{loop $_G['forum']['recommendlist']['images'] $k $imginfo}-->
+           <li></li>
+		<!--{/loop}-->
+			</ul>
+		</div>
+		<div class="btn">
+			<ul>
+				<li class="prev" id="focus_btn_left"></li>
+				<li class="next" id="focus_btn_right"></li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">jQuery(".recommendlistfocus").slide({ titCell:"#tip li", mainCell:"#pic ul",effect:"left",autoPlay:true,delayTime:200 });</script>
+    
+    
+    
+<!--{/if}-->
+
+	<!--{eval unset($_G['forum']['recommendlist']['images']);}-->
+	
+	<!--{loop $_G['forum']['recommendlist'] $rtid $recommend}-->
+		<li>
+			<a href="forum.php?mod=viewthread&tid=$rtid" $recommend[subjectstyles] target="_blank">$recommend[subject]</a>
+		</li>
+	<!--{/loop}-->
+

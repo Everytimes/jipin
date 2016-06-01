@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[huoyuedu.plugin]]></item>
+	<item id="RevisionID"><![CDATA[56725]]></item>
+	<item id="SN"><![CDATA[2016012023u6cS2X4XF4]]></item>
+	<item id="RevisionDateline"><![CDATA[1445050801]]></item>
+	<item id="Data">
+		<item id="/huoyuedu.class.php"><![CDATA[a18b35695803734bb199a81954b98d3f]]></item>
+		<item id="/discuz_plugin_huoyuedu_SC_UTF8.xml"><![CDATA[979f02c6a0d1877f1fafea28ef6827ca]]></item>
+		<item id="/uninstall.php"><![CDATA[78897bbdd5b29fa42c9e0bfea7ce1f28]]></item>
+		<item id="/install.php"><![CDATA[8c9c080cd9602d79abd96ff7cf568a0a]]></item>
+		<item id="/huoyuedu.inc.php"><![CDATA[2d3b46c76b45c6f248ab71b02ecaeaf1]]></item>
+		<item id="/discuz_plugin_huoyuedu_TC_BIG5.xml"><![CDATA[a108fc4a22626fdff7dc0a4e71e8e241]]></item>
+		<item id="/template/view.htm"><![CDATA[85a15c85299fec61e3d3274ddbabbd8e]]></item>
+		<item id="/discuz_plugin_huoyuedu_SC_GBK.xml"><![CDATA[98145f923980582af9e75f3ae26ca23b]]></item>
+		<item id="/js/js-class.js"><![CDATA[92292fbc3ffdbd9e9262b91deaf41db2]]></item>
+		<item id="/js/bluff-min.js"><![CDATA[bbd9323d8d21d161e05f590b11eb9a72]]></item>
+		<item id="/js/excanvas.js"><![CDATA[13b23ed01c8dfb9e06ba26c665876df9]]></item>
+		<item id="/discuz_plugin_huoyuedu_TC_UTF8.xml"><![CDATA[bd8554c6aba0a0011b863013cab99670]]></item>
+	</item>
+</root>

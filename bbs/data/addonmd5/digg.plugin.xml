@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[digg.plugin]]></item>
+	<item id="RevisionID"><![CDATA[55939]]></item>
+	<item id="SN"><![CDATA[2016012023xw13Q5yttX]]></item>
+	<item id="RevisionDateline"><![CDATA[1442995201]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_digg_TC_UTF8.xml"><![CDATA[254b096c069c3d2747a31dc68113d712]]></item>
+		<item id="/discuz_plugin_digg_SC_UTF8.xml"><![CDATA[0bf2aaca547c0c9c04424693e65cd405]]></item>
+		<item id="/hook.class.php"><![CDATA[3ef28e54b9b4cb6b2bb45bb74ac6cf6c]]></item>
+		<item id="/addon.inc.php"><![CDATA[7ea71cf2bb28faf00924243a820787e7]]></item>
+		<item id="/template/digg.htm"><![CDATA[c3879175815ec07e47b8c264b3453c7b]]></item>
+		<item id="/discuz_plugin_digg_TC_BIG5.xml"><![CDATA[d761c6d2f7f5010ee667b132787d043c]]></item>
+		<item id="/discuz_plugin_digg_SC_GBK.xml"><![CDATA[e3d2ab9dde914f1a2c506fc1eed3dad5]]></item>
+		<item id="/images/digg_dz_bg.ie6.png"><![CDATA[167cf23bf2cf6e6b04edc4e5fe0facd7]]></item>
+		<item id="/images/digg_dz_bg.png"><![CDATA[ff15582c868d27ef229aaf0029868d9a]]></item>
+	</item>
+</root>

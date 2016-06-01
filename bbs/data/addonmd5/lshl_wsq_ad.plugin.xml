@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[lshl_wsq_ad.plugin]]></item>
+	<item id="RevisionID"><![CDATA[56283]]></item>
+	<item id="SN"><![CDATA[2016012023LA1zlP6ViB]]></item>
+	<item id="RevisionDateline"><![CDATA[1445166003]]></item>
+	<item id="Data">
+		<item id="/pic/top.jpg"><![CDATA[0ba89755ce5b4bef595c3efbb2a2dcd5]]></item>
+		<item id="/api.class.php"><![CDATA[def9801a427b2db41a4df094a5abeff4]]></item>
+		<item id="/discuz_plugin_lshl_wsq_ad_SC_UTF8.xml"><![CDATA[194c211d30428e8120d35db670f5441e]]></item>
+		<item id="/uninstall.php"><![CDATA[93b033f756fe5c7b24e53dc6f631048a]]></item>
+		<item id="/install.php"><![CDATA[7be727cfb5ae17f0535d06f7011cd320]]></item>
+		<item id="/discuz_plugin_lshl_wsq_ad_SC_GBK.xml"><![CDATA[22f3d51563c070fed60202850b956e8d]]></item>
+	</item>
+</root>

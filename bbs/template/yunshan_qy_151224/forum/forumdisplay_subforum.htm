@@ -1,0 +1,28 @@
+<div class="forum-list-two cl">
+<!--{loop $sublist $sub}-->
+			<!--{eval $forumurl = !empty($sub['domain']) && !empty($_G['setting']['domain']['root']['forum']) ? 'http://'.$sub['domain'].'.'.$_G['setting']['domain']['root']['forum'] : 'forum.php?mod=forumdisplay&fid='.$sub['fid'];}-->
+            <!--{eval $sub_forum_icon = DB::fetch_first('SELECT icon from %t where fid = %d',array('forum_forumfield',$sub['fid']));}-->
+            <ul>
+             <li>
+            <div class="list-two-left hidden_ipad">
+            <!--{if $sub[icon]}-->
+            	<img alt="$sub[name]" src="data/attachment/common/$sub_forum_icon['icon']">
+            <!--{else}-->
+				<img src="{IMGDIR}/forum{if $sub[folder]}_new{/if}.gif" alt="$sub[name]" />
+			<!--{/if}-->
+            </div>
+            <div class="list-two-right">
+            	<div class="list-two-right-content">
+                	<p class="sub_title"><a href="$forumurl" {if !empty($sub[redirect])}target="_blank"{/if} style="{if !empty($sub[extra][namecolor])}color: {$sub[extra][namecolor]};{/if}">$sub[name]<!--{if $sub[todayposts] && !$sub['redirect']}-->($sub[todayposts])<!--{/if}--></a>
+                    </p>
+                    <p class="num hidden_ipad">
+                    
+                    <!--{if empty($sub[redirect])}--><span>{lang forum_threads}: <!--{echo dnumber($sub[threads])}--></span> <span>{lang forum_posts}: <!--{echo dnumber($sub[posts])}--></span><!--{/if}-->
+                        </p>
+                </div>
+            </div>
+            <!--{hook/forumdisplay_subforum_extra $sub[fid]}-->
+            </li>
+            </ul>
+<!--{/loop}-->	
+</div>

@@ -1,0 +1,78 @@
+@charset "utf-8";
+*{margin:0; padding:0}
+html,body{height:100%}
+ul li{list-style:none}
+img{border:0}
+body{
+	height:100%;
+	font:14px "微软雅黑","宋体",Arial,Sans-Serif;
+	color:#333;
+	background:#f4f4f4;
+}
+a{color:#2baa00}
+.logintop{
+	width:100%;
+	height:192px;
+	overflow:hidden;
+	background: url(../images/lgoin_topbg.gif) repeat;
+}
+.loginlogo{
+	width:788px;
+	height:92px;
+	background:url(../images/login_logo.png) center 0 no-repeat;
+	text-indent:-5000px;
+	overflow:hidden;
+	margin:100px auto 0;
+}
+.loginbox{
+	width:100%;
+	padding:16px 0 30px;
+	background:#fff url(../images/lgoin_boxbg.gif) left bottom repeat-x;
+}
+.logincon{
+	width:390px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.logincon li,.logincon li input{float:left;}
+.logincon li{width:390px; height:55px}
+.logincon li.title{height:62px; line-height:62px; font-size:24px; text-align:center}
+.inputname,.inputpwd{
+	font:14px "微软雅黑","宋体",Arial,Sans-Serif;
+	color:#222;
+	width:290px;
+	line-height:22px;
+	height:22px;
+	overflow:hidden;
+	padding:10px 32px 10px 68px;
+	background:url(../images/login_input1.gif) 0 -42px no-repeat;
+	border:none 0;
+}
+.inputpwd{background-image:url(../images/login_input2.gif)}
+.inputname.act,.inputpwd.act{background-position:0 0}
+.logincon li.text{padding:10px 3px; width:384px; font-size:13px; height:30px}
+.logincon li div.l{float:left}
+.logincon li div.r{float:right}
+.logincon li .checkbox{margin:4px 6px 0 0}
+.loginbtn,.loginbtn2{
+	width:180px;
+	height:34px;
+	font:17px "微软雅黑","宋体",Arial,Sans-Serif;
+	font-weight:bold;
+	color:#fff;
+	background:#06c;
+	border:none 0;
+	border-radius:2px;
+	margin:3px;
+	cursor:pointer;
+}
+.logincon li input.loginbtn2{float:right; background:#a0bed7;}
+.loginfoot{
+	width:100%;
+	margin:18px auto 20px;
+	text-align:center;
+	color:#555;
+	font-size:12px;
+}
+.loginfoot p{margin:15px auto}
+.loginfoot p b{font-size:14px}

@@ -1,0 +1,144 @@
+<script src="source/plugin/csdn123_news/res/jquery.min.js"></script>
+<script>
+function csdn123_sel_all()
+{
+	var csdn123_checked=$("#chkall").attr('checked');
+	if(csdn123_checked=="checked")
+	{
+		$('input[name=csdn123_uid]').attr('checked',true);
+	} else {
+		$('input[name=csdn123_uid]').attr('checked',false);
+	}
+}
+function csdn123_del(uid)
+{
+	if(confirm("{lang csdn123_news:csdn123_tishi_isdel}"))
+	{
+		var csdn123_url="?{$_SERVER['QUERY_STRING']}&csdn123_delid=" + uid;
+		csdn123_url=csdn123_url.replace("&csdn123_agrs=yes","");
+		$.get(csdn123_url,function(obj){
+			
+				if(obj.indexOf("delete_id_")!=-1)
+				{
+					$("#csdn123_" + "" + uid).hide("slow");
+				}
+			
+			});
+	}
+}
+function csdn123_import(uid)
+{
+	if(confirm("{lang csdn123_news:csdn123_tishi_isimport}"))
+	{
+		var csdn123_url="?{$_SERVER['QUERY_STRING']}&csdn123_importid=" + uid;
+		csdn123_url=csdn123_url.replace("&csdn123_agrs=yes","");
+		$.get(csdn123_url,function(obj){
+			
+				if(obj.indexOf("hezhiwu_yes")!=-1)
+				{
+					$("#csdn123_" + "" + uid).find(".act").eq(0).html("<span style='color:Red'>{lang csdn123_news:csdn123_tishi_chenggong}</span>");
+					$("#csdn123_" + "" + uid).find(".act").eq(0).removeAttr("href");
+				}
+			
+			});
+	}
+}
+function csdn123_import_all()
+{
+	var csdn123_i=$("input[name=csdn123_uid]:checked").length;
+	var csdn123_uid;
+	var csdn123_num=0;
+	var csdn123_uid2;
+	if(csdn123_i>0)
+	{
+		for(var i=0;i<csdn123_i;i++)
+		{
+			csdn123_uid=$("input[name=csdn123_uid]:checked").eq(i).val();
+			var csdn123_url="?{$_SERVER['QUERY_STRING']}&csdn123_importid=" + csdn123_uid;
+			csdn123_url=csdn123_url.replace("&csdn123_agrs=yes","");
+			$.get(csdn123_url,function(obj){
+				
+					if(obj.indexOf("hezhiwu_yes")!=-1)
+					{
+						csdn123_num++;
+						$("#csdn123_import").val("{lang csdn123_news:csdn123_tishi_import_ok}" + csdn123_num + "{lang csdn123_news:csdn123_tishi_tiao}");
+						csdn123_uid2=$("input[name=csdn123_uid]:checked").eq(csdn123_i-csdn123_num).val();
+						$("#csdn123_" + "" + csdn123_uid2).remove();
+						
+
+					}
+				
+				});
+			
+		}
+		
+	} else {
+		alert("{lang csdn123_news:csdn123_tishi_leftcheckbox}");
+	}
+}
+function csdn123_delete_all()
+{
+	var csdn123_i=$("input[name=csdn123_uid]:checked").length;
+	var csdn123_uid;
+	var csdn123_num=0;
+	var csdn123_uid2;
+	if(csdn123_i>0)
+	{
+		for(var i=0;i<csdn123_i;i++)
+		{
+			csdn123_uid=$("input[name=csdn123_uid]:checked").eq(i).val();
+			var csdn123_url="?{$_SERVER['QUERY_STRING']}&csdn123_delid=" + csdn123_uid;
+			csdn123_url=csdn123_url.replace("&csdn123_agrs=yes","");
+			$.get(csdn123_url,function(obj){
+				
+					if(obj.indexOf("delete_id_")!=-1)
+					{
+						csdn123_num++;
+						$("#csdn123_delete").val("{lang csdn123_news:csdn123_tishi_sussceefulldel}" + csdn123_num + "{lang csdn123_news:csdn123_tishi_tiao}");
+						csdn123_uid2=$("input[name=csdn123_uid]:checked").eq(csdn123_i-csdn123_num).val();
+						$("#csdn123_" + "" + csdn123_uid2).remove();
+						
+					}
+				
+				});
+			
+		}
+		
+	} else {
+		alert("{lang csdn123_news:csdn123_tishi_leftcheckbox}");
+	}
+}
+</script>
+<table class="tb tb2 ">
+  <tbody>
+    <tr>
+      <th colspan="19" class="partition"><span style="font-weight:normal">{lang csdn123_news:csdn123_tishi_nowchenggongcatch}<strong> {$csdn123_i} </strong>{lang csdn123_news:csdn123_tishi_tiaoneirong}</span>{$csdn123_info}</th>
+    </tr>
+    <tr class="header">
+      <th></th>
+      <th>{lang csdn123_news:csdn123_tishi_title}</th>
+      <th>{lang csdn123_news:csdn123_tishi_sendtimedate}</th>
+      <th>{lang csdn123_news:csdn123_tishi_importfid2}</th>
+      <th>{lang csdn123_news:csdn123_tishi_chaozuo}</th>
+    </tr>
+    <!--{loop $csdn123_news_list $csdn123_news_list_key $csdn123_news_list_value}-->    
+    <tr class="hover" id="csdn123_{$csdn123_news_list_value['id']}">
+      <td class="td25"><input type="checkbox" name="csdn123_uid" value="{$csdn123_news_list_value['id']}" class="checkbox"></td>
+      <td><a href="{$csdn123_news_list_value['fromurl']}" target="_blank">{$csdn123_news_list_value['title']}</a></td>
+      <td>{date($csdn123_news_list_value['getdatetime'])}</td>
+      <td><!--{eval echo csdn123_fidtoname($csdn123_news_list_value['fid'])}--></td>
+      <td><a href="javascript:csdn123_import({$csdn123_news_list_value['id']})" class="act">{lang csdn123_news:csdn123_tishi_import_dr}</a> <a href="javascript:csdn123_del({$csdn123_news_list_value['id']})" class="act">{lang csdn123_news:csdn123_tishi_del}</a></td>
+    </tr>
+    <!--{/loop}-->
+    <tr>
+      <td colspan="5">
+        <div class="fixsel" style="height:30px; line-height:30px;">
+          <input type="checkbox" id="chkall" onclick="csdn123_sel_all()" class="checkbox">
+          {lang csdn123_news:csdn123_tishi_selectall} &nbsp;&nbsp;
+          <input style="float:none" type="button" class="btn" id="csdn123_import" name="submit" value="{lang csdn123_news:csdn123_tishi_importall}" onclick="csdn123_import_all()">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input style="float:none" type="button" class="btn" id="csdn123_delete" name="submit" value="{lang csdn123_news:csdn123_tishi_deleteall}" onclick="csdn123_delete_all()">
+          </div></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[xigua_navigation_wsq.plugin]]></item>
+	<item id="RevisionID"><![CDATA[42030]]></item>
+	<item id="SN"><![CDATA[2016011823ou2i2xbbB6]]></item>
+	<item id="RevisionDateline"><![CDATA[1439038801]]></item>
+	<item id="Data">
+		<item id="/api.class.php"><![CDATA[eb5612ebd817971f98088faf055189bc]]></item>
+		<item id="/discuz_plugin_xigua_navigation_wsq_SC_GBK.xml"><![CDATA[23756ca3a1c84368a5894f5f3a84c9a7]]></item>
+		<item id="/function.php"><![CDATA[71c45a2e9e7ab84a90a02d50af4794cb]]></item>
+		<item id="/uninstall.php"><![CDATA[aea4c61cc2eeb23fca36727d2f3911a8]]></item>
+		<item id="/install.php"><![CDATA[414858dc70ebf3895c2f0fc6f84e7279]]></item>
+		<item id="/help.inc.php"><![CDATA[315acd4d4e3d805771cd1586a02d84e3]]></item>
+		<item id="/discuz_plugin_xigua_navigation_wsq_SC_UTF8.xml"><![CDATA[92763d586df24e00b762282c314a04d2]]></item>
+		<item id="/discuz_plugin_xigua_navigation_wsq_TC_BIG5.xml"><![CDATA[352c945f4747b88e7934e367e5d0ec30]]></item>
+		<item id="/admin.inc.php"><![CDATA[7b132b2e4a4e72967563a252a6723909]]></item>
+		<item id="/app.inc.php"><![CDATA[4982bb93e7278f0a81cee69c18b9cd41]]></item>
+		<item id="/xigua_navigation_wsq.inc.php"><![CDATA[b7fe5f5edf59daadb62c423e40e51ae8]]></item>
+		<item id="/table/table_plugin_xigua_navigation_wsq.php"><![CDATA[bdbd3e41fe16dfe8ba1bc65e5ac37a83]]></item>
+		<item id="/discuz_plugin_xigua_navigation_wsq_TC_UTF8.xml"><![CDATA[da69bcc71e28eaf1dcde4e303e634c0a]]></item>
+	</item>
+</root>
