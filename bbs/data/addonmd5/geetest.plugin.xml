@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<root>
-	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
-	<item id="ID"><![CDATA[geetest.plugin]]></item>
-	<item id="RevisionID"><![CDATA[25572]]></item>
-	<item id="SN"><![CDATA[20160301090FNf8ZMpRN]]></item>
-	<item id="RevisionDateline"><![CDATA[1460710801]]></item>
-	<item id="Data">
-		<item id="/upgrade.php"><![CDATA[72a22cbffd83e645a05c2b40bf9b2498]]></item>
-		<item id="/gt_check_server.php"><![CDATA[bf213a4dd2384db29aa5fca6a3d769bf]]></item>
-		<item id="/geetest.class.php"><![CDATA[1333ab27382329830bfe2f2b1edfefe3]]></item>
-		<item id="/discuz_plugin_geetest_SC_GBK.xml"><![CDATA[d4dc44d36d00e23c3bc1fc3399871c5d]]></item>
-		<item id="/install.php"><![CDATA[085b7c7760800cac3592c29b4f155628]]></item>
-		<item id="/lib/config.php"><![CDATA[9c81339e7982b11f27f1cdfb50fd777b]]></item>
-		<item id="/lib/geetestlib.php"><![CDATA[3f91e87c47ab6d976b41488a87daf7fc]]></item>
-		<item id="/geetest_mobile.class.php"><![CDATA[5a930b4d1a32e46ea67c2a968f43d785]]></item>
-		<item id="/advance.inc.php"><![CDATA[417dccceb26884220ad7b3c475371c27]]></item>
-		<item id="/feedback.inc.php"><![CDATA[524bc61fa6a8c7c5ea11ddaf433f8e3d]]></item>
-		<item id="/js/mobile_keyset.js"><![CDATA[e15b20119aeb63ba435a7c20ec870531]]></item>
-		<item id="/js/geetest_mobile.js"><![CDATA[9784d94616fb9c245330f08cf444bb12]]></item>
-		<item id="/js/gt-init.js"><![CDATA[ac26c7e7c7aa3f534062f18f28f6092f]]></item>
-		<item id="/js/web_keyset.js"><![CDATA[8a53da7b56145a821aa8565e4fe55fdc]]></item>
-		<item id="/discuz_plugin_geetest_SC_UTF8.xml"><![CDATA[d3317cbdb2cd28dd50059db4968eab1e]]></item>
-		<item id="/about.inc.php"><![CDATA[c768e9048be647cd98d495f23bc8597f]]></item>
-		<item id="/geetestcloud.inc.php"><![CDATA[b9804d7f322a27a63a483efef5f90689]]></item>
-		<item id="/discuz_plugin_geetest_TC_UTF8.xml"><![CDATA[aa74bc0fd55d0a4f2ff2d275daa53107]]></item>
-		<item id="/plugin_class/plugin_geetest_member.class.php"><![CDATA[9856d7f785bd4238ca09136b6c68c23b]]></item>
-		<item id="/plugin_class/plugin_geetest_group.class.php"><![CDATA[035ef0c4ee3f7061045b84eef08ae971]]></item>
-		<item id="/plugin_class/plugin_geetest_home.class.php"><![CDATA[ab9be580dbf4b40d7eb066b218149079]]></item>
-		<item id="/plugin_class/plugin_geetest_forum.class.php"><![CDATA[d47b984c7c3d10673892df70ed5a9fd6]]></item>
-		<item id="/discuz_plugin_geetest_TC_BIG5.xml"><![CDATA[c995f819e3d7e268b578d3173d7d6175]]></item>
-	</item>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[geetest.plugin]]></item>
+	<item id="RevisionID"><![CDATA[25572]]></item>
+	<item id="SN"><![CDATA[20160301090FNf8ZMpRN]]></item>
+	<item id="RevisionDateline"><![CDATA[1460710801]]></item>
+	<item id="Data">
+		<item id="/upgrade.php"><![CDATA[72a22cbffd83e645a05c2b40bf9b2498]]></item>
+		<item id="/gt_check_server.php"><![CDATA[bf213a4dd2384db29aa5fca6a3d769bf]]></item>
+		<item id="/geetest.class.php"><![CDATA[1333ab27382329830bfe2f2b1edfefe3]]></item>
+		<item id="/discuz_plugin_geetest_SC_GBK.xml"><![CDATA[d4dc44d36d00e23c3bc1fc3399871c5d]]></item>
+		<item id="/install.php"><![CDATA[085b7c7760800cac3592c29b4f155628]]></item>
+		<item id="/lib/config.php"><![CDATA[9c81339e7982b11f27f1cdfb50fd777b]]></item>
+		<item id="/lib/geetestlib.php"><![CDATA[3f91e87c47ab6d976b41488a87daf7fc]]></item>
+		<item id="/geetest_mobile.class.php"><![CDATA[5a930b4d1a32e46ea67c2a968f43d785]]></item>
+		<item id="/advance.inc.php"><![CDATA[417dccceb26884220ad7b3c475371c27]]></item>
+		<item id="/feedback.inc.php"><![CDATA[524bc61fa6a8c7c5ea11ddaf433f8e3d]]></item>
+		<item id="/js/mobile_keyset.js"><![CDATA[e15b20119aeb63ba435a7c20ec870531]]></item>
+		<item id="/js/geetest_mobile.js"><![CDATA[9784d94616fb9c245330f08cf444bb12]]></item>
+		<item id="/js/gt-init.js"><![CDATA[ac26c7e7c7aa3f534062f18f28f6092f]]></item>
+		<item id="/js/web_keyset.js"><![CDATA[8a53da7b56145a821aa8565e4fe55fdc]]></item>
+		<item id="/discuz_plugin_geetest_SC_UTF8.xml"><![CDATA[d3317cbdb2cd28dd50059db4968eab1e]]></item>
+		<item id="/about.inc.php"><![CDATA[c768e9048be647cd98d495f23bc8597f]]></item>
+		<item id="/geetestcloud.inc.php"><![CDATA[b9804d7f322a27a63a483efef5f90689]]></item>
+		<item id="/discuz_plugin_geetest_TC_UTF8.xml"><![CDATA[aa74bc0fd55d0a4f2ff2d275daa53107]]></item>
+		<item id="/plugin_class/plugin_geetest_member.class.php"><![CDATA[9856d7f785bd4238ca09136b6c68c23b]]></item>
+		<item id="/plugin_class/plugin_geetest_group.class.php"><![CDATA[035ef0c4ee3f7061045b84eef08ae971]]></item>
+		<item id="/plugin_class/plugin_geetest_home.class.php"><![CDATA[ab9be580dbf4b40d7eb066b218149079]]></item>
+		<item id="/plugin_class/plugin_geetest_forum.class.php"><![CDATA[d47b984c7c3d10673892df70ed5a9fd6]]></item>
+		<item id="/discuz_plugin_geetest_TC_BIG5.xml"><![CDATA[c995f819e3d7e268b578d3173d7d6175]]></item>
+	</item>
 </root>

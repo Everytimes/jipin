@@ -1,4 +1,4 @@
-<?php
+<?php
 $data = array (
   0 => 
   array (
@@ -12,7 +12,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '10',
     'has_children' => '0',
-    'goods_num' => '15',
+    'goods_num' => '18',
   ),
   1 => 
   array (
@@ -26,7 +26,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '20',
     'has_children' => '0',
-    'goods_num' => '47',
+    'goods_num' => '51',
   ),
   2 => 
   array (
@@ -40,7 +40,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '30',
     'has_children' => '0',
-    'goods_num' => '13',
+    'goods_num' => '14',
   ),
   3 => 
   array (
@@ -54,7 +54,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '40',
     'has_children' => '0',
-    'goods_num' => '24',
+    'goods_num' => '27',
   ),
   4 => 
   array (
@@ -82,7 +82,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '60',
     'has_children' => '0',
-    'goods_num' => '62',
+    'goods_num' => '69',
   ),
   6 => 
   array (
@@ -96,7 +96,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '70',
     'has_children' => '0',
-    'goods_num' => '48',
+    'goods_num' => '61',
   ),
   7 => 
   array (
@@ -110,7 +110,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '80',
     'has_children' => '0',
-    'goods_num' => '22',
+    'goods_num' => '21',
   ),
-);
+);
 ?>

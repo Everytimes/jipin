@@ -2,34 +2,34 @@
 $return = <<<EOF
 <div class="blockcode"><span></span><ol><li>{$code}</ol></div>
 EOF;
-?><?php return $return;?><?php }
-
+?><?php return $return;?><?php }
+
 function mobile_quote() {?><?php
 $return = <<<EOF
 <div class="reply_wrap">\\1</div>
 EOF;
-?><?php return $return;?><?php }
-
+?><?php return $return;?><?php }
+
 function mobile_free() {?><?php
 $return = <<<EOF
 <div class="reply_wrap">\\1</div>
 EOF;
-?><?php return $return;?><?php }
-
+?><?php return $return;?><?php }
+
 function mobile_image($url, $extra) {?><?php
 $return = <<<EOF
 <div class="img"><img src="{$url}" {$extra}/></div>
 EOF;
-?><?php return $return;?><?php }
-
-function mobile_hide_reply() {
+?><?php return $return;?><?php }
+
+function mobile_hide_reply() {
 global $_G;?><?php
 $return = <<<EOF
 \\1
 EOF;
-?><?php return $return;?><?php }
-
-function mobile_hide_reply_hidden() {
+?><?php return $return;?><?php }
+
+function mobile_hide_reply_hidden() {
 global $_G;?><?php
 $return = <<<EOF
 <div class="locked">

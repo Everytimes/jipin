@@ -1,30 +1,30 @@
-<!--{template common/header}-->
-<div id="pt" class="bm cl">
-	<div class="z">
-		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em>
-		<a href="forum.php?mod=collection">{lang collection}</a> <em>&rsaquo;</em>
-		<!--{if $op == 'edit'}-->
-		<a href="forum.php?mod=collection&action=view&ctid={$_G['collection']['ctid']}">{$_G['collection']['name']}</a> <em>&rsaquo;</em>
-		{lang collection_edit}
-		<!--{else}-->
-		{lang collection_create}
-		<!--{/if}-->
-	</div>
-</div>
-<script>
-var titlelimit = '$titlelimit';
-var desclimit = '$desclimit';
-function checklen() {
-	if(mb_strlen($("formtitle").value) > titlelimit) {
-		showError({lang collection_title_exceed});
-		return false;
-	}
-	if(mb_strlen($("formdesc").value) > desclimit) {
-		showError({lang collection_desc_exceed});
-		return false;
-	}
-	return true;
-}
+<!--{template common/header}-->
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em>
+		<a href="forum.php?mod=collection">{lang collection}</a> <em>&rsaquo;</em>
+		<!--{if $op == 'edit'}-->
+		<a href="forum.php?mod=collection&action=view&ctid={$_G['collection']['ctid']}">{$_G['collection']['name']}</a> <em>&rsaquo;</em>
+		{lang collection_edit}
+		<!--{else}-->
+		{lang collection_create}
+		<!--{/if}-->
+	</div>
+</div>
+<script>
+var titlelimit = '$titlelimit';
+var desclimit = '$desclimit';
+function checklen() {
+	if(mb_strlen($("formtitle").value) > titlelimit) {
+		showError({lang collection_title_exceed});
+		return false;
+	}
+	if(mb_strlen($("formdesc").value) > desclimit) {
+		showError({lang collection_desc_exceed});
+		return false;
+	}
+	return true;
+}
 </script>
  <div id="ct" class="wp cl">
 	<div class="bm">
@@ -47,14 +47,14 @@ function checklen() {
 					<tr>
 						<th>{lang collection_desc}</th>
 						<td><textarea name="desc" id="formdesc" rows="10" class="pt">{$_G['collection']['desc']}</textarea></td>
-					</tr>
-					<tr>
-						<th>{lang collection_keywords}</th>
-						<td>
-							<input type="text" value="{$_G['collection']['keyword']}" name="keyword" id="formkeyword" class="px" />
-							<p class="xg1">{lang collection_keywords_desc}</p>
-						</td>
-					</tr>
+					</tr>
+					<tr>
+						<th>{lang collection_keywords}</th>
+						<td>
+							<input type="text" value="{$_G['collection']['keyword']}" name="keyword" id="formkeyword" class="px" />
+							<p class="xg1">{lang collection_keywords_desc}</p>
+						</td>
+					</tr>
 					<tr>
 						<th></th>
 						<td>
@@ -67,10 +67,10 @@ function checklen() {
 								<span class="xg1">{lang collection_remain_tips}</span>
 							<!--{/if}-->
 						</td>
-					</tr>
+					</tr>
 				</table>
 			</form>
 		</div>
 	</div>
-</div>
+</div>
 <!--{template common/footer}-->

@@ -1503,7 +1503,7 @@ elseif ($action == 'team_detail')
     {
         $goods_list[$key]['market_price'] = price_format($value['market_price'], false);
         $goods_list[$key]['goods_price']  = price_format($value['goods_price'], false);
-		$goods_list[$key]['subtotal']     = price_format($value['subtotal'], false);
+        $goods_list[$key]['subtotal']     = price_format($value['subtotal'], false);
     }
 
     /* 订单 支付 配送 状态语言项 */
@@ -1633,7 +1633,7 @@ elseif ($action == 'edit_address')
     if (count($consignee_list) < 5 && $_SESSION['user_id'] > 0)
     {
         /* 如果用户收货人信息的总数小于5 则增加一个新的收货人信息 */
-		$consignee_list[] = array('country' => $_CFG['shop_country'], 'email' => isset($_SESSION['email']) ? $_SESSION['email'] : '');
+        $consignee_list[] = array('country' => $_CFG['shop_country'], 'email' => isset($_SESSION['email']) ? $_SESSION['email'] : '');
     }
 
     $smarty->assign('consignee_list', $consignee_list);

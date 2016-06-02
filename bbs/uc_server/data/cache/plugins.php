@@ -1,4 +1,4 @@
-<?php
+<?php
 $_CACHE['plugins'] = array (
   0 => 
   array (
@@ -12,6 +12,6 @@ $_CACHE['plugins'] = array (
     'tips' => '检查 UCenter 文件是否被修改。',
     'dir' => 'filecheck',
   ),
-);
-
+);
+
 ?>

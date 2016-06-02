@@ -17,7 +17,14 @@ if ($act == 'create') {
     $ip_address   = real_ip();
     $order_id     = intval($_POST['order_id']);
     $user_name    = $_SESSION['user_name'];
-    
+
+    $sql="select add_time from ".$hhs->table('comment')."where user_id=".$user_id."and order_id =".$order_id;
+    //？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？
+    echo "判断上次插入的时间，相差一分钟以上。";
+    die;
+
+
+
     $sql = "insert into ".$hhs->table('comment')." (`user_name`,`user_id`,`content`,`comment_rank`,`id_value`,`add_time`,`ip_address`) values ('$user_name','$user_id','$content','$comment_rank','$id_value','$add_time','$ip_address')";
     $db->query($sql);
     $id = $db->insert_id();

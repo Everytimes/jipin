@@ -1,9 +1,9 @@
---
--- DiscuzX INSTALL MAKE SQL DUMP V1.0
--- DO NOT modify this file
---
--- Create: 2013-08-27 16:12:45
---
+--
+-- DiscuzX INSTALL MAKE SQL DUMP V1.0
+-- DO NOT modify this file
+--
+-- Create: 2013-08-27 16:12:45
+--
 DROP TABLE IF EXISTS pre_common_admincp_cmenu;
 CREATE TABLE pre_common_admincp_cmenu (
   id smallint(6) unsigned NOT NULL AUTO_INCREMENT,

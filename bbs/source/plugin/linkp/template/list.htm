@@ -1,25 +1,25 @@
-<table class="tb tb2 ">
-  <tbody>
-    <tr class="header">
-      <th width="10%">ID</th>
-      <th>{lang linkp:seo6}</th>
-      <th>{lang linkp:seo7}</th>
-      <th>{lang linkp:seo8}</th>
-      <th>{lang linkp:seo9}</th>
-      <th>{lang linkp:seo10}</th>
-      <th>{lang linkp:seo11}</th>
-    </tr>
-    <!--{loop $data $r}-->
-    <tr>
-      <td>{$r['id']}</td>
-       <td><a href="{$r['clink']}" target="_blank">{$r['clink']}</a></td>
-      <td><a href="{$r['plink']}" target="_blank">{$r['plink']}</a></td>
-        <td>{$r['linknum']}</td>
-      <td>{$r['message']}</td>
-      <td><!--{eval echo date("Y-m-d:H:i",$r['addtime'])}--></td>
-      <td><a href="{ADMINSCRIPT}?action=plugins&identifier=linkp&pmod=admincp&mode=drop&id={$r['id']}&hash={FORMHASH}">{lang linkp:seo18}</a> <a href="{ADMINSCRIPT}?action=plugins&identifier=linkp&pmod=admincp&mode=edit&id={$r['id']}">{lang linkp:seo19}</a></td>
-    </tr>
-    <!--{/loop}-->
-    
-  </tbody>
-</table>
+<table class="tb tb2 ">
+  <tbody>
+    <tr class="header">
+      <th width="10%">ID</th>
+      <th>{lang linkp:seo6}</th>
+      <th>{lang linkp:seo7}</th>
+      <th>{lang linkp:seo8}</th>
+      <th>{lang linkp:seo9}</th>
+      <th>{lang linkp:seo10}</th>
+      <th>{lang linkp:seo11}</th>
+    </tr>
+    <!--{loop $data $r}-->
+    <tr>
+      <td>{$r['id']}</td>
+       <td><a href="{$r['clink']}" target="_blank">{$r['clink']}</a></td>
+      <td><a href="{$r['plink']}" target="_blank">{$r['plink']}</a></td>
+        <td>{$r['linknum']}</td>
+      <td>{$r['message']}</td>
+      <td><!--{eval echo date("Y-m-d:H:i",$r['addtime'])}--></td>
+      <td><a href="{ADMINSCRIPT}?action=plugins&identifier=linkp&pmod=admincp&mode=drop&id={$r['id']}&hash={FORMHASH}">{lang linkp:seo18}</a> <a href="{ADMINSCRIPT}?action=plugins&identifier=linkp&pmod=admincp&mode=edit&id={$r['id']}">{lang linkp:seo19}</a></td>
+    </tr>
+    <!--{/loop}-->
+    
+  </tbody>
+</table>

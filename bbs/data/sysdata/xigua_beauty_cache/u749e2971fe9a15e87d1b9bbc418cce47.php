@@ -1,9 +1,9 @@
 <?php
 //Discuz! cache file, DO NOT modify me!
-//Identify: fb7f5246e39496fa12a65d8953bc21ab
+//Identify: 711240e75af800f3fa9a004828454cf6
 
  return array (
-  'expireat' => 1461046626,
+  'expireat' => 1464834787,
   'data' => 
   array (
     7 => 
@@ -48,7 +48,7 @@
       'groupexpiry' => '0',
       'extgroupids' => '',
       'regdate' => '1456468892',
-      'credits' => '1951',
+      'credits' => '2215',
       'notifysound' => '0',
       'timeoffset' => '9999',
       'newpm' => '0',

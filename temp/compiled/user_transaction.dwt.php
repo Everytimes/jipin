@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
+<head>
 <meta name="Generator" content="haohaios v1.0" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -220,9 +220,10 @@ $(function () {
     };
     H_login.run();
 
+    var times=1;
     $("#btn-send").click(function(event) {
        var comment = $.trim($("#comment").val());
-       if (comment.length>0) {
+       if (comment.length>0 && times) {
         $.ajax({
             url: '/comment.php?act=create',
             type: 'POST',
@@ -233,11 +234,15 @@ $(function () {
                     alert(res.message)
                 }
                 else{
+                    times=0;
                     location.href='user.php?act=order_list&composite_status=999';
                 }
             }
         })
         
+       }
+        else {
+           alert('您已经评论过了。')
        }
     });
 });
@@ -569,7 +574,7 @@ if ($this->_foreach['foreach_goods_list']['total'] > 0):
                     </div>
                     <div class="address_row">
                         <div class="address_tit">配送方式：</div>
-                        <div class="address_cnt"><?php echo $this->_var['order']['shipping_name']; ?><br><?php echo $this->_var['order']['invoice_no']; ?></div>
+                        <div class="address_cnt"><?php echo $this->_var['order']['shipping_name']; ?><br><?php if ($this->_var['order']['invoice_no'] == 'in_3_days'): ?>下单后3个工作日之内发货，请您耐心等待！<?php else: ?><?php echo $this->_var['order']['invoice_no']; ?><?php endif; ?></div>
                     </div>
                     <?php endif; ?>
                     <?php if ($this->_var['order']['shipping_id'] == $this->_var['notExpress']): ?>
@@ -581,7 +586,7 @@ if ($this->_foreach['foreach_goods_list']['total'] > 0):
                 </div>
                <?php if (1): ?>
                 <div class="state_btn">
-                <?php echo $this->_var['order']['handler']; ?> 
+                <?php echo $this->_var['order']['handler']; ?>
                 </div>
                 <div class="state_btn"> </div>
                 <?php endif; ?>
@@ -1225,13 +1230,13 @@ function toggle(thisObj){
     	document.getElementById("invoice").style.display="";
     	document.getElementById("invoice").innerHTML="<center>正在查询物流信息，请稍后...</center>";
     	if(document.getElementById("dealliststatus1")){
-    		//document.getElementById("dealliststatus1").style.display="none";
-    		
-    		document.body.style.overflow = "hidden";
-    		document.getElementById("dealliststatus1").style.backgroundColor="#EEEEEE";
-    		document.getElementById("dealliststatus1").style.opacity = 50/100;
-    		/**/
-    	}
+            //document.getElementById("dealliststatus1").style.display="none";
+
+            document.body.style.overflow = "hidden";
+            document.getElementById("dealliststatus1").style.backgroundColor="#EEEEEE";
+            document.getElementById("dealliststatus1").style.opacity = 50/100;
+            /**/
+        }
     	
     	/*
     	var expressid = document.getElementById("shipping_name").innerHTML;
@@ -1239,12 +1244,23 @@ function toggle(thisObj){
     	
     	var expressid="<?php echo $this->_var['order']['shipping_name']; ?>";
     	var expressno="<?php echo $this->_var['order']['invoice_no']; ?>"; 
-    	*/ 
-
-    	Ajax.call('/plugins/juhe/kuaidi.php?com='+ expressid+'&nu=' + expressno,'showtest=showtest', 
-    			get_invoice_reponse, 'GET', 'JSON');
+    	*/
+        if(expressid.indexOf('汇通')!=-1){
+            Ajax.call('/plugins/juhe/kuaidi.php?com='+expressid +'&nu=' + expressno,'showtest=showtest',
+                    get_invoice_reponse, 'GET', 'JSON');
+        }
+        else{
+            Ajax.call('/plugins/kuaidiniao/kuaidiniao.php?com='+expressid +'&nu=' + expressno,'showtest=showtest',
+             get_invoice_reponse, 'GET', 'JSON');
+        }
+    	/*Ajax.call('/plugins/juhe/kuaidi.php?com='+expressid +'&nu=' + expressno,'showtest=showtest',
+    			get_invoice_reponse, 'GET', 'JSON');*/
+        /*Ajax.call('/plugins/kuaidiniao/kuaidiniao.php?com='+expressid +'&nu=' + expressno,'showtest=showtest',
+         get_invoice_reponse, 'GET', 'JSON');*/
+        /*Ajax.call('/plugins/kuaidi100/kuaidi100_post.php?com='+expressid +'&nu=' + expressno,'showtest=showtest',
+                get_invoice_reponse, 'GET', 'JSON');*/
     }
-	function get_invoice_reponse(result){ 
+	function get_invoice_reponse(result){
 		/*
 		  {"message":"ok","status":"1","state":"3","data":
             [{"time":"2012-07-07 13:35:14","context":"客户已签收"},
@@ -1258,7 +1274,7 @@ function toggle(thisObj){
              {"time":"2012-07-06 10:43:21","context":"到达 [北京运转中心驻站班组]"},
              {"time":"2012-07-05 21:18:53","context":"离开 [福建_厦门支公司] 发往 [北京运转中心_航空]"},
              {"time":"2012-07-05 20:07:27","context":"已取件，到达 [福建_厦门支公司]"}
-            ]} 
+            ]}
 		*/
 /*
 		if((result.status==0||result.status==3||result.status==5)&&result.message=='ok'){
@@ -1270,8 +1286,15 @@ function toggle(thisObj){
 		}else{
 			document.getElementById("retData").innerHTML=result.message;
 		}*/
-		
-		document.getElementById("invoice").innerHTML=result;
+        var str=result.indexOf('\u9519\u8bef');
+        var smes=result.indexOf('\u5bf9\u4e0d\u8d77\uff0c\u6ca1\u6709\u67e5\u5230\u4fe1\u606f\uff01');
+         if(result.indexOf('in_3_days')>0){
+            document.getElementById("invoice").innerHTML="\n<a href=\"javascript:void(0);\" onclick=\"cancel_invoice();\" class=\"close\">X<\/a> <div>商家正在为您发货，请耐心等待！<\/div>";
+         }else if(str>0 || smes>0){
+            document.getElementById("invoice").innerHTML="\n<a href=\"javascript:void(0);\" onclick=\"cancel_invoice();\" class=\"close\">X<\/a> <div>商品正在运送途中，请耐心等待！<\/div>";
+         }else{
+            document.getElementById("invoice").innerHTML=result;
+         }
 	}
 </script>
 </html>

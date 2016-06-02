@@ -1,6 +1,6 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('guide');
 0
-|| checktplrefresh('./template/default/forum/guide.htm', './template/default/forum/guide_list_row.htm', 1460803178, '4', './data/template/4_4_forum_guide.tpl.php', './template/devil_csyg', 'forum/guide')
+|| checktplrefresh('./template/default/forum/guide.htm', './template/default/forum/guide_list_row.htm', 1463621128, '4', './data/template/4_4_forum_guide.tpl.php', './template/devil_csyg', 'forum/guide')
 ;?><?php include template('common/header'); ?><style type="text/css">
 .xl2 { background: url(<?php echo IMGDIR;?>/vline.png) repeat-y 50% 0; }
 .xl2 li { width: 49.9%; }
@@ -127,101 +127,101 @@
 </div>
 <div class="bm_c">
 <div id="forumnew" style="display:none"></div>
-<table cellspacing="0" cellpadding="0">				<?php if($list['threadcount']) { if(is_array($list['threadlist'])) foreach($list['threadlist'] as $key => $thread) { ?><tbody id="<?php echo $thread['id'];?>">
-<tr>
-<td class="icn">
-<a href="forum.php?mod=viewthread&amp;tid=<?php echo $thread['icontid'];?>&amp;<?php if($_GET['archiveid']) { ?>archiveid=<?php echo $_GET['archiveid'];?>&amp;<?php } ?>extra=<?php echo $extra;?>" title="<?php if($thread['displayorder'] == 1) { ?>本版置顶主题 - <?php } if($thread['displayorder'] == 2) { ?>分类置顶主题 - <?php } if($thread['displayorder'] == 3) { ?>全局置顶主题 - <?php } if($thread['displayorder'] == 4) { ?>多版置顶主题 - <?php } if($thread['folder'] == 'lock') { ?>关闭的主题 - <?php } if($thread['special'] == 1) { ?>投票 - <?php } if($thread['special'] == 2) { ?>商品 - <?php } if($thread['special'] == 3) { ?>悬赏 - <?php } if($thread['special'] == 4) { ?>活动 - <?php } if($thread['special'] == 5) { ?>辩论 - <?php } if($thread['folder'] == "new") { ?>有新回复 - <?php } ?>
-新窗口打开" target="_blank">
-<?php if($thread['folder'] == 'lock') { ?>
-<img src="<?php echo IMGDIR;?>/folder_lock.gif" />
-<?php } elseif($thread['special'] == 1) { ?>
-<img src="<?php echo IMGDIR;?>/pollsmall.gif" alt="投票" />
-<?php } elseif($thread['special'] == 2) { ?>
-<img src="<?php echo IMGDIR;?>/tradesmall.gif" alt="商品" />
-<?php } elseif($thread['special'] == 3) { ?>
-<img src="<?php echo IMGDIR;?>/rewardsmall.gif" alt="悬赏" />
-<?php } elseif($thread['special'] == 4) { ?>
-<img src="<?php echo IMGDIR;?>/activitysmall.gif" alt="活动" />
-<?php } elseif($thread['special'] == 5) { ?>
-<img src="<?php echo IMGDIR;?>/debatesmall.gif" alt="辩论" />
-<?php } elseif(in_array($thread['displayorder'], array(1, 2, 3, 4))) { ?>
-<img src="<?php echo IMGDIR;?>/pin_<?php echo $thread['displayorder'];?>.gif" alt="<?php echo $_G['setting']['threadsticky'][3-$thread['displayorder']];?>" />
-<?php } else { ?>
-<img src="<?php echo IMGDIR;?>/folder_<?php echo $thread['folder'];?>.gif" />
-<?php } ?>
-</a>
-</td>
-<th class="<?php echo $thread['folder'];?>">
-<?php if(!$thread['forumstick'] && $thread['closed'] > 1 && ($thread['isgroup'] == 1 || $thread['fid'] != $_G['fid'])) { $thread[tid]=$thread[closed];?><?php } ?>
-<?php echo $thread['typehtml'];?> <?php echo $thread['sorthtml'];?>
-<?php if($thread['moved']) { ?>
-移动:<?php $thread[tid]=$thread[closed];?><?php } ?>
-<a href="forum.php?mod=viewthread&amp;tid=<?php echo $thread['tid'];?>&amp;<?php if($_GET['archiveid']) { ?>archiveid=<?php echo $_GET['archiveid'];?>&amp;<?php } ?>extra=<?php echo $extra;?>" target="_blank" class="xst" ><?php echo $thread['subject'];?></a><?php if($_G['setting']['threadhidethreshold'] && $thread['hidden'] >= $_G['setting']['threadhidethreshold']) { ?>&nbsp;<span class="xg1">隐藏</span>&nbsp;<?php } if($view == 'hot') { ?>&nbsp;<span class="xi1"><?php echo $thread['heats'];?>人参与</span>&nbsp;<?php } if($thread['icon'] >= 0) { ?>
-<img src="<?php echo STATICURL;?>image/stamp/<?php echo $_G['cache']['stamps'][$thread['icon']]['url'];?>" alt="<?php echo $_G['cache']['stamps'][$thread['icon']]['text'];?>" align="absmiddle" />
-<?php } if($thread['rushreply']) { ?>
-<img src="<?php echo IMGDIR;?>/rushreply_s.png" alt="抢楼" align="absmiddle" />
-<?php } if($stemplate && $sortid) { ?><?php echo $stemplate[$sortid][$thread['tid']];?><?php } if($thread['readperm']) { ?> - [阅读权限 <span class="xw1"><?php echo $thread['readperm'];?></span>]<?php } if($thread['price'] > 0) { if($thread['special'] == '3') { ?>
-- <span class="xi1">[悬赏 <span class="xw1"><?php echo $thread['price'];?></span> <?php echo $_G['setting']['extcredits'][$_G['setting']['creditstransextra']['2']]['unit'];?><?php echo $_G['setting']['extcredits'][$_G['setting']['creditstransextra']['2']]['title'];?>]</span>
-<?php } else { ?>
-- [售价 <span class="xw1"><?php echo $thread['price'];?></span> <?php echo $_G['setting']['extcredits'][$_G['setting']['creditstransextra']['1']]['unit'];?><?php echo $_G['setting']['extcredits'][$_G['setting']['creditstransextra']['1']]['title'];?>]
-<?php } } elseif($thread['special'] == '3' && $thread['price'] < 0) { ?>
-- [已解决]
-<?php } if($thread['attachment'] == 2) { ?>
-<img src="<?php echo STATICURL;?>image/filetype/image_s.gif" alt="attach_img" title="图片附件" align="absmiddle" />
-<?php } elseif($thread['attachment'] == 1) { ?>
-<img src="<?php echo STATICURL;?>image/filetype/common.gif" alt="attachment" title="附件" align="absmiddle" />
-<?php } if($thread['digest'] > 0 && $filter != 'digest') { ?>
-<img src="<?php echo IMGDIR;?>/digest_<?php echo $thread['digest'];?>.gif" align="absmiddle" alt="digest" title="精华 <?php echo $thread['digest'];?>" />
-<?php } if($thread['displayorder'] == 0) { if($thread['recommendicon'] && $filter != 'recommend') { ?>
-<img src="<?php echo IMGDIR;?>/recommend_<?php echo $thread['recommendicon'];?>.gif" align="absmiddle" alt="recommend" title="评价指数 <?php echo $thread['recommends'];?>" />
-<?php } if($thread['heatlevel']) { ?>
-<img src="<?php echo IMGDIR;?>/hot_<?php echo $thread['heatlevel'];?>.gif" align="absmiddle" alt="heatlevel" title="<?php echo $thread['heatlevel'];?> 热度" />
-<?php } if($thread['rate'] > 0) { ?>
-<img src="<?php echo IMGDIR;?>/agree.gif" align="absmiddle" alt="agree" title="帖子被加分" />
-<?php } elseif($thread['rate'] < 0) { ?>
-<img src="<?php echo IMGDIR;?>/disagree.gif" align="absmiddle" alt="disagree" title="帖子被减分" />
-<?php } } if($thread['replycredit'] > 0) { ?>
-- <span class="xi1">[回帖奖励 <strong> <?php echo $thread['replycredit'];?></strong> ]</span>
-<?php } if($thread['multipage']) { ?>
-<span class="tps"><?php echo $thread['multipage'];?></span>
-<?php } if($thread['weeknew']) { ?>
-<a href="forum.php?mod=redirect&amp;tid=<?php echo $thread['tid'];?>&amp;goto=lastpost#lastpost" class="xi1">New</a>
-<?php } if(!$thread['forumstick'] && ($thread['isgroup'] == 1 || $thread['fid'] != $_G['fid'])) { if($thread['related_group'] == 0 && $thread['closed'] > 1) { $thread[tid]=$thread[closed];?><?php } } ?>
-</th>
-<td class="by"><a href="forum.php?mod=forumdisplay&amp;fid=<?php echo $thread['fid'];?>" target="_blank"><?php echo $list['forumnames'][$thread['fid']]['name'];?></a></td>
-<td class="by">
-<cite>
-<?php if($thread['authorid'] && $thread['author']) { ?>
-<a href="home.php?mod=space&amp;uid=<?php echo $thread['authorid'];?>" c="1"><?php echo $thread['author'];?></a><?php if(!empty($verify[$thread['authorid']])) { ?> <?php echo $verify[$thread['authorid']];?><?php } } else { ?>
-<?php echo $_G['setting']['anonymoustext'];?>
-<?php } ?>
-</cite>
-<em><span<?php if($thread['istoday']) { ?> class="xi1"<?php } ?>><?php echo $thread['dateline'];?></span></em>
-</td>
-<td class="num"><a href="forum.php?mod=viewthread&amp;tid=<?php echo $thread['tid'];?>&amp;extra=<?php echo $extra;?>" class="xi2"><?php echo $thread['replies'];?></a><em><?php if($thread['isgroup'] != 1) { ?><?php echo $thread['views'];?><?php } else { ?><?php echo $groupnames[$thread['tid']]['views'];?><?php } ?></em></td>
-<td class="by">
-<cite><?php if($thread['lastposter']) { ?><a href="<?php if($thread['digest'] != -2) { ?>home.php?mod=space&username=<?php echo $thread['lastposterenc'];?><?php } else { ?>forum.php?mod=viewthread&tid=<?php echo $thread['tid'];?>&page=<?php echo max(1, $thread['pages']);; } ?>" c="1"><?php echo $thread['lastposter'];?></a><?php } else { ?><?php echo $_G['setting']['anonymoustext'];?><?php } ?></cite>
-<em><a href="<?php if($thread['digest'] != -2) { ?>forum.php?mod=redirect&tid=<?php echo $thread['tid'];?>&goto=lastpost<?php echo $highlight;?>#lastpost<?php } else { ?>forum.php?mod=viewthread&tid=<?php echo $thread['tid'];?>&page=<?php echo max(1, $thread['pages']);; } ?>"><?php echo $thread['lastpost'];?></a></em>
-</td>
-</tr>
-</tbody>
-<?php if($view == 'my' && $viewtype=='reply' && !empty($tids[$thread['tid']])) { ?>
-<tbody class="bw0_all">
-<tr>
-<td class="icn">&nbsp;</td>
-<td colspan="5"><?php if(is_array($tids[$thread['tid']])) foreach($tids[$thread['tid']] as $pid) { $post = $posts[$pid];?><div class="tl_reply pbm xg1"><a href="forum.php?mod=redirect&amp;goto=findpost&amp;ptid=<?php echo $thread['tid'];?>&amp;pid=<?php echo $pid;?>" target="_blank"><?php if($post['message']) { ?><?php echo $post['message'];?><?php } else { ?>...<?php } ?></a></div>
-<?php } ?>
-</td>
-</tr>
-</tbody>
-<tr><td colspan="6"></td></tr>
-<?php } if($view == 'my' && $viewtype=='postcomment') { ?>
-<tr>
-<td class="icn">&nbsp;</td>
-<td colspan="5" class="xg1"><?php echo $thread['comment'];?></td>
-</tr>
-<?php } } } else { ?>
-<tbody class="bw0_all"><tr><th colspan="5"><p class="emp">暂时还没有帖子</p></th></tr></tbody>
+<table cellspacing="0" cellpadding="0">				<?php if($list['threadcount']) { if(is_array($list['threadlist'])) foreach($list['threadlist'] as $key => $thread) { ?><tbody id="<?php echo $thread['id'];?>">
+<tr>
+<td class="icn">
+<a href="forum.php?mod=viewthread&amp;tid=<?php echo $thread['icontid'];?>&amp;<?php if($_GET['archiveid']) { ?>archiveid=<?php echo $_GET['archiveid'];?>&amp;<?php } ?>extra=<?php echo $extra;?>" title="<?php if($thread['displayorder'] == 1) { ?>本版置顶主题 - <?php } if($thread['displayorder'] == 2) { ?>分类置顶主题 - <?php } if($thread['displayorder'] == 3) { ?>全局置顶主题 - <?php } if($thread['displayorder'] == 4) { ?>多版置顶主题 - <?php } if($thread['folder'] == 'lock') { ?>关闭的主题 - <?php } if($thread['special'] == 1) { ?>投票 - <?php } if($thread['special'] == 2) { ?>商品 - <?php } if($thread['special'] == 3) { ?>悬赏 - <?php } if($thread['special'] == 4) { ?>活动 - <?php } if($thread['special'] == 5) { ?>辩论 - <?php } if($thread['folder'] == "new") { ?>有新回复 - <?php } ?>
+新窗口打开" target="_blank">
+<?php if($thread['folder'] == 'lock') { ?>
+<img src="<?php echo IMGDIR;?>/folder_lock.gif" />
+<?php } elseif($thread['special'] == 1) { ?>
+<img src="<?php echo IMGDIR;?>/pollsmall.gif" alt="投票" />
+<?php } elseif($thread['special'] == 2) { ?>
+<img src="<?php echo IMGDIR;?>/tradesmall.gif" alt="商品" />
+<?php } elseif($thread['special'] == 3) { ?>
+<img src="<?php echo IMGDIR;?>/rewardsmall.gif" alt="悬赏" />
+<?php } elseif($thread['special'] == 4) { ?>
+<img src="<?php echo IMGDIR;?>/activitysmall.gif" alt="活动" />
+<?php } elseif($thread['special'] == 5) { ?>
+<img src="<?php echo IMGDIR;?>/debatesmall.gif" alt="辩论" />
+<?php } elseif(in_array($thread['displayorder'], array(1, 2, 3, 4))) { ?>
+<img src="<?php echo IMGDIR;?>/pin_<?php echo $thread['displayorder'];?>.gif" alt="<?php echo $_G['setting']['threadsticky'][3-$thread['displayorder']];?>" />
+<?php } else { ?>
+<img src="<?php echo IMGDIR;?>/folder_<?php echo $thread['folder'];?>.gif" />
+<?php } ?>
+</a>
+</td>
+<th class="<?php echo $thread['folder'];?>">
+<?php if(!$thread['forumstick'] && $thread['closed'] > 1 && ($thread['isgroup'] == 1 || $thread['fid'] != $_G['fid'])) { $thread[tid]=$thread[closed];?><?php } ?>
+<?php echo $thread['typehtml'];?> <?php echo $thread['sorthtml'];?>
+<?php if($thread['moved']) { ?>
+移动:<?php $thread[tid]=$thread[closed];?><?php } ?>
+<a href="forum.php?mod=viewthread&amp;tid=<?php echo $thread['tid'];?>&amp;<?php if($_GET['archiveid']) { ?>archiveid=<?php echo $_GET['archiveid'];?>&amp;<?php } ?>extra=<?php echo $extra;?>" target="_blank" class="xst" ><?php echo $thread['subject'];?></a><?php if($_G['setting']['threadhidethreshold'] && $thread['hidden'] >= $_G['setting']['threadhidethreshold']) { ?>&nbsp;<span class="xg1">隐藏</span>&nbsp;<?php } if($view == 'hot') { ?>&nbsp;<span class="xi1"><?php echo $thread['heats'];?>人参与</span>&nbsp;<?php } if($thread['icon'] >= 0) { ?>
+<img src="<?php echo STATICURL;?>image/stamp/<?php echo $_G['cache']['stamps'][$thread['icon']]['url'];?>" alt="<?php echo $_G['cache']['stamps'][$thread['icon']]['text'];?>" align="absmiddle" />
+<?php } if($thread['rushreply']) { ?>
+<img src="<?php echo IMGDIR;?>/rushreply_s.png" alt="抢楼" align="absmiddle" />
+<?php } if($stemplate && $sortid) { ?><?php echo $stemplate[$sortid][$thread['tid']];?><?php } if($thread['readperm']) { ?> - [阅读权限 <span class="xw1"><?php echo $thread['readperm'];?></span>]<?php } if($thread['price'] > 0) { if($thread['special'] == '3') { ?>
+- <span class="xi1">[悬赏 <span class="xw1"><?php echo $thread['price'];?></span> <?php echo $_G['setting']['extcredits'][$_G['setting']['creditstransextra']['2']]['unit'];?><?php echo $_G['setting']['extcredits'][$_G['setting']['creditstransextra']['2']]['title'];?>]</span>
+<?php } else { ?>
+- [售价 <span class="xw1"><?php echo $thread['price'];?></span> <?php echo $_G['setting']['extcredits'][$_G['setting']['creditstransextra']['1']]['unit'];?><?php echo $_G['setting']['extcredits'][$_G['setting']['creditstransextra']['1']]['title'];?>]
+<?php } } elseif($thread['special'] == '3' && $thread['price'] < 0) { ?>
+- [已解决]
+<?php } if($thread['attachment'] == 2) { ?>
+<img src="<?php echo STATICURL;?>image/filetype/image_s.gif" alt="attach_img" title="图片附件" align="absmiddle" />
+<?php } elseif($thread['attachment'] == 1) { ?>
+<img src="<?php echo STATICURL;?>image/filetype/common.gif" alt="attachment" title="附件" align="absmiddle" />
+<?php } if($thread['digest'] > 0 && $filter != 'digest') { ?>
+<img src="<?php echo IMGDIR;?>/digest_<?php echo $thread['digest'];?>.gif" align="absmiddle" alt="digest" title="精华 <?php echo $thread['digest'];?>" />
+<?php } if($thread['displayorder'] == 0) { if($thread['recommendicon'] && $filter != 'recommend') { ?>
+<img src="<?php echo IMGDIR;?>/recommend_<?php echo $thread['recommendicon'];?>.gif" align="absmiddle" alt="recommend" title="评价指数 <?php echo $thread['recommends'];?>" />
+<?php } if($thread['heatlevel']) { ?>
+<img src="<?php echo IMGDIR;?>/hot_<?php echo $thread['heatlevel'];?>.gif" align="absmiddle" alt="heatlevel" title="<?php echo $thread['heatlevel'];?> 热度" />
+<?php } if($thread['rate'] > 0) { ?>
+<img src="<?php echo IMGDIR;?>/agree.gif" align="absmiddle" alt="agree" title="帖子被加分" />
+<?php } elseif($thread['rate'] < 0) { ?>
+<img src="<?php echo IMGDIR;?>/disagree.gif" align="absmiddle" alt="disagree" title="帖子被减分" />
+<?php } } if($thread['replycredit'] > 0) { ?>
+- <span class="xi1">[回帖奖励 <strong> <?php echo $thread['replycredit'];?></strong> ]</span>
+<?php } if($thread['multipage']) { ?>
+<span class="tps"><?php echo $thread['multipage'];?></span>
+<?php } if($thread['weeknew']) { ?>
+<a href="forum.php?mod=redirect&amp;tid=<?php echo $thread['tid'];?>&amp;goto=lastpost#lastpost" class="xi1">New</a>
+<?php } if(!$thread['forumstick'] && ($thread['isgroup'] == 1 || $thread['fid'] != $_G['fid'])) { if($thread['related_group'] == 0 && $thread['closed'] > 1) { $thread[tid]=$thread[closed];?><?php } } ?>
+</th>
+<td class="by"><a href="forum.php?mod=forumdisplay&amp;fid=<?php echo $thread['fid'];?>" target="_blank"><?php echo $list['forumnames'][$thread['fid']]['name'];?></a></td>
+<td class="by">
+<cite>
+<?php if($thread['authorid'] && $thread['author']) { ?>
+<a href="home.php?mod=space&amp;uid=<?php echo $thread['authorid'];?>" c="1"><?php echo $thread['author'];?></a><?php if(!empty($verify[$thread['authorid']])) { ?> <?php echo $verify[$thread['authorid']];?><?php } } else { ?>
+<?php echo $_G['setting']['anonymoustext'];?>
+<?php } ?>
+</cite>
+<em><span<?php if($thread['istoday']) { ?> class="xi1"<?php } ?>><?php echo $thread['dateline'];?></span></em>
+</td>
+<td class="num"><a href="forum.php?mod=viewthread&amp;tid=<?php echo $thread['tid'];?>&amp;extra=<?php echo $extra;?>" class="xi2"><?php echo $thread['replies'];?></a><em><?php if($thread['isgroup'] != 1) { ?><?php echo $thread['views'];?><?php } else { ?><?php echo $groupnames[$thread['tid']]['views'];?><?php } ?></em></td>
+<td class="by">
+<cite><?php if($thread['lastposter']) { ?><a href="<?php if($thread['digest'] != -2) { ?>home.php?mod=space&username=<?php echo $thread['lastposterenc'];?><?php } else { ?>forum.php?mod=viewthread&tid=<?php echo $thread['tid'];?>&page=<?php echo max(1, $thread['pages']);; } ?>" c="1"><?php echo $thread['lastposter'];?></a><?php } else { ?><?php echo $_G['setting']['anonymoustext'];?><?php } ?></cite>
+<em><a href="<?php if($thread['digest'] != -2) { ?>forum.php?mod=redirect&tid=<?php echo $thread['tid'];?>&goto=lastpost<?php echo $highlight;?>#lastpost<?php } else { ?>forum.php?mod=viewthread&tid=<?php echo $thread['tid'];?>&page=<?php echo max(1, $thread['pages']);; } ?>"><?php echo $thread['lastpost'];?></a></em>
+</td>
+</tr>
+</tbody>
+<?php if($view == 'my' && $viewtype=='reply' && !empty($tids[$thread['tid']])) { ?>
+<tbody class="bw0_all">
+<tr>
+<td class="icn">&nbsp;</td>
+<td colspan="5"><?php if(is_array($tids[$thread['tid']])) foreach($tids[$thread['tid']] as $pid) { $post = $posts[$pid];?><div class="tl_reply pbm xg1"><a href="forum.php?mod=redirect&amp;goto=findpost&amp;ptid=<?php echo $thread['tid'];?>&amp;pid=<?php echo $pid;?>" target="_blank"><?php if($post['message']) { ?><?php echo $post['message'];?><?php } else { ?>...<?php } ?></a></div>
+<?php } ?>
+</td>
+</tr>
+</tbody>
+<tr><td colspan="6"></td></tr>
+<?php } if($view == 'my' && $viewtype=='postcomment') { ?>
+<tr>
+<td class="icn">&nbsp;</td>
+<td colspan="5" class="xg1"><?php echo $thread['comment'];?></td>
+</tr>
+<?php } } } else { ?>
+<tbody class="bw0_all"><tr><th colspan="5"><p class="emp">暂时还没有帖子</p></th></tr></tbody>
 <?php } ?></table>
 </div>
 </div>

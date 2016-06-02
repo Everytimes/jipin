@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<root>
-	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
-	<item id="ID"><![CDATA[ezhilu_postnotice.plugin]]></item>
-	<item id="RevisionID"><![CDATA[56005]]></item>
-	<item id="SN"><![CDATA[2016012023Z522CcJ55w]]></item>
-	<item id="RevisionDateline"><![CDATA[1443416404]]></item>
-	<item id="Data">
-		<item id="/discuz_plugin_ezhilu_postnotice_TC_BIG5.xml"><![CDATA[0319fb9c58a7590a5e7280c4a831f9cf]]></item>
-		<item id="/mobile.class.php"><![CDATA[5911028073c5f216440092a397a6f8ea]]></item>
-		<item id="/discuz_plugin_ezhilu_postnotice_TC_UTF8.xml"><![CDATA[29da3d9953bcb3bca358a68862028268]]></item>
-		<item id="/discuz_plugin_ezhilu_postnotice_SC_GBK.xml"><![CDATA[dba31e858fde288550254b6cb079a344]]></item>
-		<item id="/discuz_plugin_ezhilu_postnotice_SC_UTF8.xml"><![CDATA[f0d71bcf0bd6815898cd5cd0adc97a80]]></item>
-		<item id="/ezhilu_postnotice.class.php"><![CDATA[6e33c66c84068687a0db099e8d245f05]]></item>
-	</item>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[ezhilu_postnotice.plugin]]></item>
+	<item id="RevisionID"><![CDATA[56005]]></item>
+	<item id="SN"><![CDATA[2016012023Z522CcJ55w]]></item>
+	<item id="RevisionDateline"><![CDATA[1443416404]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_ezhilu_postnotice_TC_BIG5.xml"><![CDATA[0319fb9c58a7590a5e7280c4a831f9cf]]></item>
+		<item id="/mobile.class.php"><![CDATA[5911028073c5f216440092a397a6f8ea]]></item>
+		<item id="/discuz_plugin_ezhilu_postnotice_TC_UTF8.xml"><![CDATA[29da3d9953bcb3bca358a68862028268]]></item>
+		<item id="/discuz_plugin_ezhilu_postnotice_SC_GBK.xml"><![CDATA[dba31e858fde288550254b6cb079a344]]></item>
+		<item id="/discuz_plugin_ezhilu_postnotice_SC_UTF8.xml"><![CDATA[f0d71bcf0bd6815898cd5cd0adc97a80]]></item>
+		<item id="/ezhilu_postnotice.class.php"><![CDATA[6e33c66c84068687a0db099e8d245f05]]></item>
+	</item>
 </root>

@@ -49,9 +49,9 @@
         'links' => '<div id="logo-menu-nav" ><ul><li><a href=""></a></li></ul></div>',
       ),
       'hide' => 0,
-      'html' => '<div class="logo_wrapper cl" style="">
-    <div class="logo_img" style="text-indent:10px;"><img src="template/devil_csyg/style/logo.png" alt="极拼商城" border="0" /></div>
-    <a  class="func" href="http://www.1jipin.com/plugin.php?id=xigua_portal%3Aindex&redirect=1"></a>  <div id="logo-menu-nav" ><ul><li><a href=""></a></li></ul></div>
+      'html' => '<div class="logo_wrapper cl" style="">
+    <div class="logo_img" style="text-indent:10px;"><img src="template/devil_csyg/style/logo.png" alt="极拼商城" border="0" /></div>
+    <a  class="func" href="http://www.1jipin.com/plugin.php?id=xigua_portal%3Aindex&redirect=1"></a>  <div id="logo-menu-nav" ><ul><li><a href=""></a></li></ul></div>
 </div>',
     ),
     'slider_155' => 

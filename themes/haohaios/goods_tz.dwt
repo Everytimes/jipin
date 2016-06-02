@@ -76,6 +76,13 @@
             <input name="number" type="hidden" value="1" />
             </form>
         </div>
+		
+		<div class="pro-detial">
+            <div class="pro_con">
+                {$goods.goods_desc}
+            </div>
+        </div>
+		
         <div class="step">
             <div class="step_hd">
                 拼团玩法<a class="step_more" href="tuan_rule.php">查看详情</a>

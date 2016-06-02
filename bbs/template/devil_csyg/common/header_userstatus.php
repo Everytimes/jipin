@@ -10,7 +10,7 @@
 		</span>
 		<!--{/if}-->
 		<!--{hook/global_usernav_extra1}-->
-		<span class="pipe">|</span><!--{hook/global_usernav_extra4}--><a href="javascript:;" id="myitem" class="showmenu" onmouseover="showMenu({'ctrlid':'myitem'});">{lang myitem}</a>
+		<span class="pipe">|</span><!--{hook/global_usernav_extra4}--><a href="javascript:;" id="myitem" class="showmenu" onmouseover="showMenu({'ctrlid':'myitem'});">{lang myitem}</a>
 		<span class="pipe">|</span><a href="home.php?mod=spacecp">{lang setup}</a>
 		<span class="pipe">|</span><a href="home.php?mod=space&do=pm" id="pm_ntc"{if $_G[member][newpm]} class="new"{/if}>{lang pm_center}</a>
 		<span class="pipe">|</span><a href="home.php?mod=space&do=notice" id="myprompt" class="a showmenu{if $_G[member][newprompt]} new{/if}" onmouseover="showMenu({'ctrlid':'myprompt'});">{lang remind}<!--{if $_G[member][newprompt]}-->($_G[member][newprompt])<!--{/if}--></a><span id="myprompt_check"></span>

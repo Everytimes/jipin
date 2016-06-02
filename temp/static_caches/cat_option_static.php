@@ -1,4 +1,4 @@
-<?php
+<?php
 $data = array (
   76 => 
   array (
@@ -12,7 +12,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '10',
     'has_children' => '0',
-    'goods_num' => '15',
+    'goods_num' => '18',
     'level' => 0,
     'id' => '76',
     'name' => '生鲜水果',
@@ -29,7 +29,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '20',
     'has_children' => '0',
-    'goods_num' => '47',
+    'goods_num' => '51',
     'level' => 0,
     'id' => '77',
     'name' => '干果零食',
@@ -46,7 +46,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '30',
     'has_children' => '0',
-    'goods_num' => '13',
+    'goods_num' => '14',
     'level' => 0,
     'id' => '78',
     'name' => '酒水饮料',
@@ -63,7 +63,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '40',
     'has_children' => '0',
-    'goods_num' => '24',
+    'goods_num' => '27',
     'level' => 0,
     'id' => '79',
     'name' => '美妆护肤',
@@ -97,7 +97,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '60',
     'has_children' => '0',
-    'goods_num' => '62',
+    'goods_num' => '69',
     'level' => 0,
     'id' => '81',
     'name' => '服装饰品',
@@ -114,7 +114,7 @@ $data = array (
     'grade' => '0',
     'sort_order' => '70',
     'has_children' => '0',
-    'goods_num' => '48',
+    'goods_num' => '61',
     'level' => 0,
     'id' => '82',
     'name' => '日用百货',
@@ -131,10 +131,10 @@ $data = array (
     'grade' => '0',
     'sort_order' => '80',
     'has_children' => '0',
-    'goods_num' => '22',
+    'goods_num' => '21',
     'level' => 0,
     'id' => '83',
     'name' => '家居用品',
   ),
-);
+);
 ?>

@@ -1,62 +1,62 @@
-<script src="source/plugin/csdn123_news/res/jquery.min.js"></script>
-<form action="?{$_SERVER['QUERY_STRING']}&csdn123_agrs=yes" method="post">
-<table class="tb tb2 ">
-  <tr>
-    <th colspan="15" class="partition">{lang csdn123_news:csdn123_tishi_argsset}</th>
-  </tr>
-  <tr>
-    <td colspan="2" class="td27" s="1">{lang csdn123_news:csdn123_tishi_inputkeyword}</td>
-  </tr>
-  <tr class="noborder" onmouseover="setfaq(this, 'faq95ed')">
-    <td class="vtop rowform"><input name="csdn123_keyword"  type="text" class="txt"></td>
-    <td class="vtop tips2" s="1">{lang csdn123_news:csdn123_tishi_keywordorsiteurl}</td>
-  </tr>
-  <tr>
-    <td colspan="2" class="td27" s="1">{lang csdn123_news:csdn123_tishi_contentfrom}</td>
-  </tr>
-  <tr class="noborder" onmouseover="setfaq(this, 'faq95ed')">
-    <td class="vtop rowform"><select name="csdn123_fromtype">
-        <option value="0">{lang csdn123_news:csdn123_tishi_allfrom}</option>
-        <option value="1">{lang csdn123_news:csdn123_tishi_fromweixin}</option>
-        <option value="2">{lang csdn123_news:csdn123_tishi_fromgoodnews}</option>
-        <option value="3">{lang csdn123_news:csdn123_tishi_fromhaha}</option>
-        <option value="4">{lang csdn123_news:csdn123_tishi_fromvideo}</option>
-        <option value="5">{lang csdn123_news:csdn123_tishi_fromimg}</option>
-      </select></td>
-    <td class="vtop tips2" s="1"></td>
-  </tr>
-  <tr>
-    <td colspan="2" class="td27" s="1">{lang csdn123_news:csdn123_tishi_importfid}</td>
-  </tr>
-  <tr class="noborder" onmouseover="setfaq(this, 'faq95ed')">
-    <td class="vtop rowform"><select name="csdn123_importfid">
-        <!--{loop $csdn123_fid $csdn123_key $csdn123_value}-->
-        <option value="{$csdn123_value['fid']}">{$csdn123_value['name']}</option>
-        <!--{/loop}-->
-      </select></td>
-    <td class="vtop tips2" s="1">{lang csdn123_news:csdn123_tishi_datextimport}</td>
-  </tr>
-  <tr>
-    <td colspan="2" class="td27" s="1">{lang csdn123_news:csdn123_tishi_isshowfromurl}</td>
-  </tr>
-  <tr class="noborder" onmouseover="setfaq(this, 'faq95ed')">
-    <td class="vtop rowform"><ul onmouseover="altStyle(this);">
-        <li class="checked">
-          <input class="radio" type="radio" name="csdn123_showfromurl" value="1" checked="checked">
-          &nbsp;{lang csdn123_news:csdn123_tishi_yes}</li>
-        <li>
-          <input class="radio" type="radio" name="csdn123_showfromurl" value="0">
-          &nbsp;{lang csdn123_news:csdn123_tishi_no}</li>
-      </ul></td>
-    <td class="vtop tips2" s="1">{lang csdn123_news:csdn123_tishi_selyesshowurl}</td>
-  </tr>
-  <tr>
-    <td colspan="15"><br />
-      <div class="fixsel">
-        <input type="submit" class="btn" value="{lang csdn123_news:csdn123_tishi_okcatch}" onclick="$(this).val('{lang csdn123_news:csdn123_tishi_catching}');">
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="?{$_SERVER['QUERY_STRING']}&csdn123_agrs=yes">{lang csdn123_news:csdn123_tishi_lookresult}</a>
-      </div></td>
-  </tr>
-</table>
+<script src="source/plugin/csdn123_news/res/jquery.min.js"></script>
+<form action="?{$_SERVER['QUERY_STRING']}&csdn123_agrs=yes" method="post">
+<table class="tb tb2 ">
+  <tr>
+    <th colspan="15" class="partition">{lang csdn123_news:csdn123_tishi_argsset}</th>
+  </tr>
+  <tr>
+    <td colspan="2" class="td27" s="1">{lang csdn123_news:csdn123_tishi_inputkeyword}</td>
+  </tr>
+  <tr class="noborder" onmouseover="setfaq(this, 'faq95ed')">
+    <td class="vtop rowform"><input name="csdn123_keyword"  type="text" class="txt"></td>
+    <td class="vtop tips2" s="1">{lang csdn123_news:csdn123_tishi_keywordorsiteurl}</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="td27" s="1">{lang csdn123_news:csdn123_tishi_contentfrom}</td>
+  </tr>
+  <tr class="noborder" onmouseover="setfaq(this, 'faq95ed')">
+    <td class="vtop rowform"><select name="csdn123_fromtype">
+        <option value="0">{lang csdn123_news:csdn123_tishi_allfrom}</option>
+        <option value="1">{lang csdn123_news:csdn123_tishi_fromweixin}</option>
+        <option value="2">{lang csdn123_news:csdn123_tishi_fromgoodnews}</option>
+        <option value="3">{lang csdn123_news:csdn123_tishi_fromhaha}</option>
+        <option value="4">{lang csdn123_news:csdn123_tishi_fromvideo}</option>
+        <option value="5">{lang csdn123_news:csdn123_tishi_fromimg}</option>
+      </select></td>
+    <td class="vtop tips2" s="1"></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="td27" s="1">{lang csdn123_news:csdn123_tishi_importfid}</td>
+  </tr>
+  <tr class="noborder" onmouseover="setfaq(this, 'faq95ed')">
+    <td class="vtop rowform"><select name="csdn123_importfid">
+        <!--{loop $csdn123_fid $csdn123_key $csdn123_value}-->
+        <option value="{$csdn123_value['fid']}">{$csdn123_value['name']}</option>
+        <!--{/loop}-->
+      </select></td>
+    <td class="vtop tips2" s="1">{lang csdn123_news:csdn123_tishi_datextimport}</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="td27" s="1">{lang csdn123_news:csdn123_tishi_isshowfromurl}</td>
+  </tr>
+  <tr class="noborder" onmouseover="setfaq(this, 'faq95ed')">
+    <td class="vtop rowform"><ul onmouseover="altStyle(this);">
+        <li class="checked">
+          <input class="radio" type="radio" name="csdn123_showfromurl" value="1" checked="checked">
+          &nbsp;{lang csdn123_news:csdn123_tishi_yes}</li>
+        <li>
+          <input class="radio" type="radio" name="csdn123_showfromurl" value="0">
+          &nbsp;{lang csdn123_news:csdn123_tishi_no}</li>
+      </ul></td>
+    <td class="vtop tips2" s="1">{lang csdn123_news:csdn123_tishi_selyesshowurl}</td>
+  </tr>
+  <tr>
+    <td colspan="15"><br />
+      <div class="fixsel">
+        <input type="submit" class="btn" value="{lang csdn123_news:csdn123_tishi_okcatch}" onclick="$(this).val('{lang csdn123_news:csdn123_tishi_catching}');">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="?{$_SERVER['QUERY_STRING']}&csdn123_agrs=yes">{lang csdn123_news:csdn123_tishi_lookresult}</a>
+      </div></td>
+  </tr>
+</table>
 </form>

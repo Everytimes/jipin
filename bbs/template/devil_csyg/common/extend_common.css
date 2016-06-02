@@ -1,74 +1,74 @@
-html{overflow-y:scroll;}
-ul,li{list-style:none;} 
-a:hover{color:#db0000;}
-.temp {margin:0;}
-.slideshow span.title {text-indent:0px;}
-.frame, .frame-tab {background:none;border:0px solid #fff;margin-bottom:0px;}
-#nv li,#nv li a{text-decoration:none;}
-.wp {width:1000px;}
-.ct2 .mn {width:770px;}
-.ct3_a .mn {width:605px;}
-.ct2_a .mn {width:840px;}
-#toptb {border-top:2px solid #f80;}
-#nv {overflow:hidden;height:40px;{MENUBGCODE};}
-#nv ul{padding-left:8px;}
-#nv li {float:left;padding-right:2px;height:40px;line-height:40px;background:url({STYLEIMGDIR}/nv_a.png) no-repeat 100% 0;font-weight:400;font-size:16px;font-family:"Microsoft YaHei";}
-.ie_all #nv li {line-height:38px;}
-.ie6 #nv li {line-height:40px;}
-#nv li a {float:left;padding:0 15px;height:40px;margin-left:0px;}
-#nv li a {color:{MENUTEXT};}
-#nv li span {display:none;}
-#nv li.a {margin-left:-1px;{MENUHOVERBGCODE};background:url({STYLEIMGDIR}/nv_a.png) no-repeat 100% 0;}
-#nv li.a a {margin-left:0px;color:{MENUHOVERTEXT};}
-#nv li.hover a, #nv li.hover a:hover {background:url({STYLEIMGDIR}/nv_a.png) no-repeat 50% -120px;}
-#nv li a:hover{background:url({STYLEIMGDIR}/nv_a.png) no-repeat 50% -80px;}
-#nv li.a a:hover{background:url({STYLEIMGDIR}/nv_a.png) no-repeat 50% -40px;}
-#nv li.a a{margin-left:1px;{MENUHOVERBGCODE};}
-#qmenu {margin:8px 8px 0;padding-right:12px;width:78px;height:25px;color:#b43209;}
-#hd {background:url({STYLEIMGDIR}/devil_bodybg.jpg) no-repeat center top;}
-#hd .hdc {min-height:80px;height:80px;}
-.fastlg_fm {margin-top:5px;}
-.fastlg_l {border-right:1px solid #DDDDDD;}
-#hd #um .qq_bind{margin-right:3px;}
-.devil_dlan {box-shadow:0 0px 0 #E5E5E5;background:url({STYLEIMGDIR}/devil_dlico.gif) no-repeat; height:23px;border:0px solid #fff;}
-.ie6 .devil_dlan {box-shadow:0 0px 0 #E5E5E5;background:url({STYLEIMGDIR}/devil_dlico.gif) no-repeat; height:23px;border:0px solid #fff;margin-left:3px;}
-#scbar {border:1px solid {WRAPBORDERCOLOR};border-top:0px solid #FFFFFF;background:#f9f9f9;border-radius:0px 0px 3px 3px;}
-.scbar_icon_td {background:url({STYLEIMGDIR}/search.png) no-repeat -8px -50px;width:11px;}
-#ft {padding:0 0 15px;line-height:24px;border-top: none;}
-.pg_stat #ft,.pg_faq #ft{border-top:none;}
-.devil_footer{margin:0 auto;padding-bottom:15px;text-align:center;}
-.devil_footertop {background:url({STYLEIMGDIR}/titlebg.png) repeat-x;border:1px solid {WRAPBORDERCOLOR};border-top:none;height:36px;line-height:38px;overflow:hidden;color:#ccc;margin-bottom:8px;}
-.devil_footertop a{margin:0 10px;}
-.devil_Copyright {color:{FOOTERTEXT};}
-.devil_Copyright a{color:{FOOTERTEXT};}
-.tip {text-align:left;}
-.pg a, .pg strong, .pgb a, .pg label{border:1px solid {WRAPBORDERCOLOR};min-width:10px;text-align:center;display:inline;}
-.bm_h {height:36px;line-height:36px;font-size:14px;border-bottom-color:{WRAPBORDERCOLOR};border-top:none;}
-.bm_h,.bmw .bm_h {background:url({STYLEIMGDIR}/titlebg.png) repeat-x scroll 0 0 {TITLEBGCOLOR};color:{HIGHLIGHTLINK};}
-.bm_h h2{color:{HIGHLIGHTLINK};}
-.bm_h .y, .bm_h .y a{font-size:12px;font-weight:400;}
-.bm_h .o {width:20px;}
-.bm_h .o img {margin-top:10px;}
-#pgt .pg, #pgt .pgb {margin-top:0px;}
-.pg strong{border-color:#fe9d01;background-color:#fe9d01;color:#fff;}
-.pg a:hover, .pgb a:hover {border-color:#fe9d01;background-color:#fe9d01;color:#fff;text-decoration:none;}
-.pgb a:hover {background-image:url({STYLEIMGDIR}/arw_ls.gif);}
-.pg a.nxt:hover {background-image:url({STYLEIMGDIR}/arw_rs.gif);}
-.pg a.prev:hover {background-image:url({STYLEIMGDIR}/arw_ls.gif);background-position:50% 50%;}
-.px, .pt, .ps, select {border:1px solid {INPUTBORDERDARKCOLOR};background:#fff url({STYLEIMGDIR}/px.png) repeat-x 0 0;}
-.pgbtn a {border:1px solid {WRAPBORDERCOLOR};background:{SPECIALBG};height:36px;line-height:36px;}
-.pgbtn a:hover,.pgbtn a:active {border-color:{WRAPBORDERCOLOR};}
-.pnc, a.pnc {border-color:#ef7d1a;background-color:#f68b0f;}
+html{overflow-y:scroll;}
+ul,li{list-style:none;} 
+a:hover{color:#db0000;}
+.temp {margin:0;}
+.slideshow span.title {text-indent:0px;}
+.frame, .frame-tab {background:none;border:0px solid #fff;margin-bottom:0px;}
+#nv li,#nv li a{text-decoration:none;}
+.wp {width:1000px;}
+.ct2 .mn {width:770px;}
+.ct3_a .mn {width:605px;}
+.ct2_a .mn {width:840px;}
+#toptb {border-top:2px solid #f80;}
+#nv {overflow:hidden;height:40px;{MENUBGCODE};}
+#nv ul{padding-left:8px;}
+#nv li {float:left;padding-right:2px;height:40px;line-height:40px;background:url({STYLEIMGDIR}/nv_a.png) no-repeat 100% 0;font-weight:400;font-size:16px;font-family:"Microsoft YaHei";}
+.ie_all #nv li {line-height:38px;}
+.ie6 #nv li {line-height:40px;}
+#nv li a {float:left;padding:0 15px;height:40px;margin-left:0px;}
+#nv li a {color:{MENUTEXT};}
+#nv li span {display:none;}
+#nv li.a {margin-left:-1px;{MENUHOVERBGCODE};background:url({STYLEIMGDIR}/nv_a.png) no-repeat 100% 0;}
+#nv li.a a {margin-left:0px;color:{MENUHOVERTEXT};}
+#nv li.hover a, #nv li.hover a:hover {background:url({STYLEIMGDIR}/nv_a.png) no-repeat 50% -120px;}
+#nv li a:hover{background:url({STYLEIMGDIR}/nv_a.png) no-repeat 50% -80px;}
+#nv li.a a:hover{background:url({STYLEIMGDIR}/nv_a.png) no-repeat 50% -40px;}
+#nv li.a a{margin-left:1px;{MENUHOVERBGCODE};}
+#qmenu {margin:8px 8px 0;padding-right:12px;width:78px;height:25px;color:#b43209;}
+#hd {background:url({STYLEIMGDIR}/devil_bodybg.jpg) no-repeat center top;}
+#hd .hdc {min-height:80px;height:80px;}
+.fastlg_fm {margin-top:5px;}
+.fastlg_l {border-right:1px solid #DDDDDD;}
+#hd #um .qq_bind{margin-right:3px;}
+.devil_dlan {box-shadow:0 0px 0 #E5E5E5;background:url({STYLEIMGDIR}/devil_dlico.gif) no-repeat; height:23px;border:0px solid #fff;}
+.ie6 .devil_dlan {box-shadow:0 0px 0 #E5E5E5;background:url({STYLEIMGDIR}/devil_dlico.gif) no-repeat; height:23px;border:0px solid #fff;margin-left:3px;}
+#scbar {border:1px solid {WRAPBORDERCOLOR};border-top:0px solid #FFFFFF;background:#f9f9f9;border-radius:0px 0px 3px 3px;}
+.scbar_icon_td {background:url({STYLEIMGDIR}/search.png) no-repeat -8px -50px;width:11px;}
+#ft {padding:0 0 15px;line-height:24px;border-top: none;}
+.pg_stat #ft,.pg_faq #ft{border-top:none;}
+.devil_footer{margin:0 auto;padding-bottom:15px;text-align:center;}
+.devil_footertop {background:url({STYLEIMGDIR}/titlebg.png) repeat-x;border:1px solid {WRAPBORDERCOLOR};border-top:none;height:36px;line-height:38px;overflow:hidden;color:#ccc;margin-bottom:8px;}
+.devil_footertop a{margin:0 10px;}
+.devil_Copyright {color:{FOOTERTEXT};}
+.devil_Copyright a{color:{FOOTERTEXT};}
+.tip {text-align:left;}
+.pg a, .pg strong, .pgb a, .pg label{border:1px solid {WRAPBORDERCOLOR};min-width:10px;text-align:center;display:inline;}
+.bm_h {height:36px;line-height:36px;font-size:14px;border-bottom-color:{WRAPBORDERCOLOR};border-top:none;}
+.bm_h,.bmw .bm_h {background:url({STYLEIMGDIR}/titlebg.png) repeat-x scroll 0 0 {TITLEBGCOLOR};color:{HIGHLIGHTLINK};}
+.bm_h h2{color:{HIGHLIGHTLINK};}
+.bm_h .y, .bm_h .y a{font-size:12px;font-weight:400;}
+.bm_h .o {width:20px;}
+.bm_h .o img {margin-top:10px;}
+#pgt .pg, #pgt .pgb {margin-top:0px;}
+.pg strong{border-color:#fe9d01;background-color:#fe9d01;color:#fff;}
+.pg a:hover, .pgb a:hover {border-color:#fe9d01;background-color:#fe9d01;color:#fff;text-decoration:none;}
+.pgb a:hover {background-image:url({STYLEIMGDIR}/arw_ls.gif);}
+.pg a.nxt:hover {background-image:url({STYLEIMGDIR}/arw_rs.gif);}
+.pg a.prev:hover {background-image:url({STYLEIMGDIR}/arw_ls.gif);background-position:50% 50%;}
+.px, .pt, .ps, select {border:1px solid {INPUTBORDERDARKCOLOR};background:#fff url({STYLEIMGDIR}/px.png) repeat-x 0 0;}
+.pgbtn a {border:1px solid {WRAPBORDERCOLOR};background:{SPECIALBG};height:36px;line-height:36px;}
+.pgbtn a:hover,.pgbtn a:active {border-color:{WRAPBORDERCOLOR};}
+.pnc, a.pnc {border-color:#ef7d1a;background-color:#f68b0f;}
 .px, .pt, .ps, select {box-shadow:2px 2px 2px #f0f0f0 inset;}
-.tedt .pt {box-shadow:none;}
-.ftid a { border: 1px solid #ccc; background-color: #fff; box-shadow: 2px 2px 2px #f0f0f0 inset;}
-.hdc .ftid a {box-shadow: 0px 0px 0px #f0f0f0 inset;}
-#uhd {border: 1px solid {WRAPBORDERCOLOR};border-bottom:0px solid {WRAPBORDERCOLOR};}
-#nv_home #wp .ct1 {border-radius:0px;background:{SIDEBGCOLOR};}
-#scrolltop {border-color: {WRAPBORDERCOLOR};background:{SPECIALBG};margin-left:10px;}
-#scrolltop a {border-top: 1px solid {WRAPBORDERCOLOR}}
-.nfl .f_c .rfm th {padding-right:8px;}
-#diy1 .devil_bjtj {border-top:none !important;}
-.devil_bjtj .title {height:36px;line-height:36px;background:url({STYLEIMGDIR}/titlebg.png) repeat-x 0 0;border-bottom:1px solid {WRAPBORDERCOLOR};overflow:hidden;}
-.devil_bjtj .ml img {border:1px solid {WRAPBORDERCOLOR};padding:1px;margin-bottom:3px;}
+.tedt .pt {box-shadow:none;}
+.ftid a { border: 1px solid #ccc; background-color: #fff; box-shadow: 2px 2px 2px #f0f0f0 inset;}
+.hdc .ftid a {box-shadow: 0px 0px 0px #f0f0f0 inset;}
+#uhd {border: 1px solid {WRAPBORDERCOLOR};border-bottom:0px solid {WRAPBORDERCOLOR};}
+#nv_home #wp .ct1 {border-radius:0px;background:{SIDEBGCOLOR};}
+#scrolltop {border-color: {WRAPBORDERCOLOR};background:{SPECIALBG};margin-left:10px;}
+#scrolltop a {border-top: 1px solid {WRAPBORDERCOLOR}}
+.nfl .f_c .rfm th {padding-right:8px;}
+#diy1 .devil_bjtj {border-top:none !important;}
+.devil_bjtj .title {height:36px;line-height:36px;background:url({STYLEIMGDIR}/titlebg.png) repeat-x 0 0;border-bottom:1px solid {WRAPBORDERCOLOR};overflow:hidden;}
+.devil_bjtj .ml img {border:1px solid {WRAPBORDERCOLOR};padding:1px;margin-bottom:3px;}
 .devil_bjtj_list .xl1 ul li {margin:4px 0;font-size:14px;}

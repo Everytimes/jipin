@@ -2,11 +2,11 @@
 // database host
 $db_host   = "localhost:3306";
 // database name
-$db_name   = "jipin";
+$db_name   = "pintuan";
 // database username
-$db_user   = "jipin";
+$db_user   = "jipindev";
 // database password
-$db_pass   = "jipin";
+$db_pass   = "Jipindev2016";
 // table prefix
 $prefix    = "hhs_";
 $timezone    = "PRC";

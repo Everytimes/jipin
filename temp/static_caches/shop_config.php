@@ -1,4 +1,4 @@
-<?php
+<?php
 $data = array (
   'shop_name' => '极拼商城',
   'shop_title' => '极拼商城',
@@ -178,7 +178,7 @@ $data = array (
   'min_money' => '1000',
   'percentage' => '2',
   'ziti' => '1',
-  'bonus_ad' => '我们的理想就是<br>
+  'bonus_ad' => '我们的理想就是<br>
 每个人都能快速买到适合自己的正品<br>',
   'store_share_desc' => '我们尽力做到最好，您能感受得到吗？',
   'best_number' => 3,
@@ -188,5 +188,5 @@ $data = array (
   'qq' => '',
   'ww' => '',
   'one_step_buy' => 0,
-);
+);
 ?>

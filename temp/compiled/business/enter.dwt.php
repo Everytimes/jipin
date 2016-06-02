@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh">
-<head>
+<head>
 <meta name="Generator" content="haohaios v1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="Keywords" content="<?php echo $this->_var['keywords']; ?>" />

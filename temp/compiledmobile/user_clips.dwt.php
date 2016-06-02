@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html manifest="/manifest/tmallCateAppCache.manifest">
-<head>
+<head>
 <meta name="Generator" content="HHSHOP v2.7.3" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
           
 <meta charset="utf-8">     

@@ -1,3 +1,3 @@
-define(function () {
-	return jQuery;
-});
+define(function () {
+	return jQuery;
+});

@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<root>
-	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
-	<item id="ID"><![CDATA[nciaer_qqservice.plugin]]></item>
-	<item id="RevisionID"><![CDATA[60774]]></item>
-	<item id="SN"><![CDATA[2016012022d0oagfEXHO]]></item>
-	<item id="RevisionDateline"><![CDATA[1452250801]]></item>
-	<item id="Data">
-		<item id="/discuz_plugin_nciaer_qqservice_TC_UTF8.xml"><![CDATA[39c3f570f46a18fc3f53bf7245a71d1b]]></item>
-		<item id="/discuz_plugin_nciaer_qqservice_SC_GBK.xml"><![CDATA[8fbb6afc60017f28b0a2b76c76faa27f]]></item>
-		<item id="/discuz_plugin_nciaer_qqservice_TC_BIG5.xml"><![CDATA[165906f2b6f7ceb635591472959f77c0]]></item>
-		<item id="/discuz_plugin_nciaer_qqservice_SC_UTF8.xml"><![CDATA[b15cad4e87faf8ce2282d9079eb89fc5]]></item>
-		<item id="/qqservice.class.php"><![CDATA[68c2e4b75716ecc81ad901e90938f1ef]]></item>
-		<item id="/template/index.htm"><![CDATA[4f09421faa4376df9893867bd9ff3f61]]></item>
-		<item id="/apps.inc.php"><![CDATA[c5d77fb72fd9e9979ae9d60066392280]]></item>
-		<item id="/images/q.png"><![CDATA[eae21b937174385b3b9945a17f985d3a]]></item>
-		<item id="/images/qq_bg.png"><![CDATA[ac3f96b6ac8896185b648e71c6bc0ee4]]></item>
-		<item id="/images/qq_icon.png"><![CDATA[6b9ab68eeb6ea88402e498ec77a61700]]></item>
-		<item id="/images/index.js"><![CDATA[e8159dff981bd9ccb26fd3865f49c2a7]]></item>
-		<item id="/images/index.css"><![CDATA[6cc3d0fdc7240bf6d75969f9b009845b]]></item>
-	</item>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[nciaer_qqservice.plugin]]></item>
+	<item id="RevisionID"><![CDATA[60774]]></item>
+	<item id="SN"><![CDATA[2016012022d0oagfEXHO]]></item>
+	<item id="RevisionDateline"><![CDATA[1452250801]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_nciaer_qqservice_TC_UTF8.xml"><![CDATA[39c3f570f46a18fc3f53bf7245a71d1b]]></item>
+		<item id="/discuz_plugin_nciaer_qqservice_SC_GBK.xml"><![CDATA[8fbb6afc60017f28b0a2b76c76faa27f]]></item>
+		<item id="/discuz_plugin_nciaer_qqservice_TC_BIG5.xml"><![CDATA[165906f2b6f7ceb635591472959f77c0]]></item>
+		<item id="/discuz_plugin_nciaer_qqservice_SC_UTF8.xml"><![CDATA[b15cad4e87faf8ce2282d9079eb89fc5]]></item>
+		<item id="/qqservice.class.php"><![CDATA[68c2e4b75716ecc81ad901e90938f1ef]]></item>
+		<item id="/template/index.htm"><![CDATA[4f09421faa4376df9893867bd9ff3f61]]></item>
+		<item id="/apps.inc.php"><![CDATA[c5d77fb72fd9e9979ae9d60066392280]]></item>
+		<item id="/images/q.png"><![CDATA[eae21b937174385b3b9945a17f985d3a]]></item>
+		<item id="/images/qq_bg.png"><![CDATA[ac3f96b6ac8896185b648e71c6bc0ee4]]></item>
+		<item id="/images/qq_icon.png"><![CDATA[6b9ab68eeb6ea88402e498ec77a61700]]></item>
+		<item id="/images/index.js"><![CDATA[e8159dff981bd9ccb26fd3865f49c2a7]]></item>
+		<item id="/images/index.css"><![CDATA[6cc3d0fdc7240bf6d75969f9b009845b]]></item>
+	</item>
 </root>

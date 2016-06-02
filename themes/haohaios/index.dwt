@@ -70,8 +70,6 @@
                 
                     <div class="tuan_g_img">
                         <a href="{$goods.url}"><img src="{$goods.little_img}"></a>
-                        <!--<a href="javascript:dsheldon()" goods="{$goods.url}"><img src="{$goods.little_img}" class="goods_img" goods_id="{$goods.url}"></a>-->
-                        <!--<img src="{$goods.little_img}" class="goods_img" goods_id="{$goods.url}">-->
                         <!--span class="tuan_mark tuan_mark2">
                         <b>{$goods.team_discount}折</b>
                         <span>{$goods.team_num}人团</span>
@@ -112,8 +110,7 @@
                             <span>{$goods.team_num}人团</span>
                             <b>¥{$goods.team_price}</b>
                         </div>
-                        <a href="javascript:dsheldon()"><div class="tuan_g_btn">去开团</div></a>
-                        <!--<a href="{$goods.url}"><div class="tuan_g_btn">去开团</div></a>-->
+                        <a href="{$goods.url}"><div class="tuan_g_btn">去开团</div></a>
                     </div>
                     <div class="like goods_list_like">
                         <img src="images/{$goods.like}like.png">
@@ -127,7 +124,6 @@
 </div>
 <!-- #BeginLibraryItem "/library/footer.lbi" --><!-- #EndLibraryItem -->
 <script>
-
 var page = 2;
 // dropload
 var dropload = $('#tuan').dropload({
@@ -145,8 +141,6 @@ var dropload = $('#tuan').dropload({
                     result += '<div class="tuan_g" >';
                     result += '<div class="tuan_g_img">';
                     result += '<a href="'+data.goodslist[i]['url']+'"><img src="'+data.goodslist[i]['little_img']+'"></a>';
-//                    result += '<img src="'+data.goodslist[i]['little_img']+'" class="goods_img" goods_id="'+data.goodslist[i]['url']+'">';
-//                    result += '<a href="javascript:dsheldon()"><img src="'+data.goodslist[i]['little_img']+'"></a>';
 
                     if(data.goodslist[i]['logo']){
                         result += '<div class="tuan_seller"><img src="'+data.goodslist[i]['logo']+'"></div>';
@@ -193,7 +187,7 @@ dropload.lock();
 		document.getElementById('loading').style.display='none';
 		document.getElementById('container').style.display='';
 		
-        var swiper = new Swiper('.swiper-container', {
+				var swiper = new Swiper('.swiper-container', {
 	        pagination: '.swiper-pagination',
 	        paginationClickable: true,
 	        spaceBetween: 30,
@@ -203,6 +197,7 @@ dropload.lock();
 	    });
 	}
 </script>
+
 <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script language="javascript" type="text/javascript">
 
@@ -301,43 +296,6 @@ dropload.lock();
         });
 	}
 
-</script>
-<script src="/js/jquery.js"></script>
-<script type="text/javascript">
-    /*$(".goods_img").live('click',function(){
-        var good_url=$(this).attr('goods_id');
-        $.ajax({
-            type:'post',
-            url:'index.php',
-            data:{
-                ip:524
-            },
-            datatype:"json",
-            success:function(){
-                window.location.href="http://www.baidu.com";
-            }
-        })
-    })*/
-        /*function dsheldon(){
-            alert(123);
-            var goods_url=$(this).innerHTML;
-            alert(goods_url);
-            $.ajax({
-                type:"post",
-                url:"index.php",
-                data:"ip=524",
-                datatype:"json",
-                success:function(phpData){
-                    alert('right');
-                        window.location.href="https://www.baidu.com";
-                    },
-                error:function(error){
-                    alert('error');
-                    window.location.replace="https://www.baidu.com";
-                    window.location.replace="www.baidu.com";
-                }
-            })
-        }*/
 </script>
 </body>
 </html>

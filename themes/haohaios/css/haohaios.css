@@ -16443,9 +16443,9 @@ margin-top: -18px;
 
 .top_search { padding:3px 8px; position:relative; }
 
-.top_search .text { width:98%; height:40px; line-height:40px; border:none; background:#fff; border-radius:5px; padding:0 1%; }
+.top_search .text { width:80%; height:40px; line-height:40px; border:1px solid #CC9999; background:#fff; border-radius:5px; padding:0 1%; }
 
-.top_search .submit { height:40px; padding:0 10px; position:absolute; top:5px; right:8px; background:#DF2127; border-radius:0 5px 5px 0; border:none; font-size:14px; color:#fff; }
+.top_search .submit { height:40px; padding:0 10px; position:absolute; top:5px; right:8px; background:#DF2127; border-radius:5px; border:none; font-size:14px; color:#fff; }
 
 .share { float:right; font-size: 18px; margin-top:15px; }
 .share .share_link { background:#DF2127; color:#fff; padding:2px 10px; border-radius:3px; }

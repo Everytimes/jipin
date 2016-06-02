@@ -1,4 +1,4 @@
-<?php
+<?php
 $_CACHE['settings'] = array (
   'accessemail' => '',
   'censoremail' => '',
@@ -27,6 +27,6 @@ $_CACHE['settings'] = array (
   'mailsilent' => '1',
   'login_failedtime' => '5',
   'version' => '1.6.0',
-);
-
+);
+
 ?>

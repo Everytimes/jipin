@@ -15,7 +15,7 @@
 global $_LANG;
 
 $_LANG['zhjs_express']             = '宅急送';
-$_LANG['zhjs_express_desc']        = '江、浙、沪地区首重15元/KG，续重2元/KG，其余城市首重20元/KG';
+$_LANG['zhjs_express_desc']        = '省外首重15元/KG，续重5元/KG，省内城市首重10元/KG';
 $_LANG['item_fee']              = '单件商品费用：';
 $_LANG['base_fee']              = '1000克以内费用';
 $_LANG['step_fee']               = '续重每1000克或其零数的费用';

@@ -511,7 +511,7 @@ function check_delivery_person()
           <input type="submit" value="查询" class="btn" />
         </form>
       </div>
-      <div class="titleright"> <a href="javascript:void(0);" id="delivery_download">导出</a> <a href="javascript:void(0);" id="delivery_print" target="_blank">打印</a> </div>
+      <div class="titleright"> <a href="javascript:void(0);" id="delivery_download">导出</a> </div>
       <script >
 
 var str;
@@ -787,7 +787,7 @@ document.getElementById('account_print').href="suppliers.php?act=account_print&"
         <!--{foreach from=$account_list item=item}-->
 
         <tr>
-<!-- 
+<!--
          <td class="checkbox"><input type="checkbox"  name="id[]" id="id" value="{$item.id}" /></td>
  -->
           <td align="center" bgcolor="#FFFFFF"><a href="suppliers.php?act=account_detail&suppliers_accounts_id={$item.id}">{$item.settlement_sn}</a></td>
@@ -1378,7 +1378,9 @@ onclick="return confirm('确定要此操作吗');">取消申请</a>{else}已完�
 <form id="form_data" action="suppliers.php" method="post" name="myform">
     <div class="bnts">
      <input name="act" type="hidden" value="order_operation" />
+
      <input type="submit" value="打印" name="order_print">
+     <input type="button" onclick="order_i();" value="批量修改订单" name="order_import">
 
      <input type="button" onclick="order_d();" value="导出" name="order_download">
  </div>
@@ -1393,6 +1395,9 @@ var str="order_sn="+order_sn+"&composite_status="+composite_status+"&start_time=
 function order_d(){	
 	
 	window.location="suppliers.php?act=order_download2&"+str;
+}
+function order_i(){
+    window.location="suppliers.php?act=import";
 }
 </script>
 				<table cellspacing="0" cellpadding="0" class="listtable">
@@ -1419,7 +1424,7 @@ function order_d(){
 
                       <td align="center">{$order_list.buyer}<br />{$order_list.short_order_time}</td>
 
-                      <td align="center">{$order_list.consignee}{if $order_list.point_id eq 0}[TEL:{if $order_list.mobile}{$order_list.mobile}{else}{$order_list.tel}{/if}]<br />{$order_list.address}{/if}</td>
+                      <td align="center">{$order_list.consignee}{if $order_list.point_id eq 0}[TEL:{if $order_list.mobile}{$order_list.mobile}{else}{$order_list.tel}{/if}]<br />[{$order_list.region}]{$order_list.address}{/if}</td>
 					  <td align="center">{$order_list.goods_num}</td>
                       <td align="center">{$order_list.total_fee}</td>
 
@@ -2934,7 +2939,6 @@ function rowClicked(obj)
 					</tr>
                     </table>
 
-                   
 
                     </form>
              </div>

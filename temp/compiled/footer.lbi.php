@@ -7,7 +7,9 @@
         <li><a href="user.php" class="nav-user"><i class="icon-user"></i>个人中心</a></li>
     </ul>
 </div>
+<div style="display:none">
 <script src="http://s11.cnzz.com/stat.php?id=1257149822&web_id=1257149822" language="JavaScript"></script>
+</div>
 <div class="back-top"><span uigs="wap_to_top">顶部</span></div>
 <!--div class="ws-for-push ws-for-push-show">
     <img src="http://omsproduction.b0.upaiyun.com/goods/588cd8e171/200/200/7843ef993284b86c2b18b977c6b95f33.jpg">

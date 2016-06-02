@@ -123,7 +123,7 @@
                  <!-- {/if} -->
    
                 <!--{if $team_info.team_status eq 1}-->
-                <div class="pp_tips" id="flag_0_a" >还差<b>{$d_num}</b>人，引首以望，延颈鹤望，就等你来啦~~</div>
+                <div class="pp_tips" id="flag_0_a" >还差<b>{$d_num}</b>人，就像严冬中盼望着春天，就等你来啦~~</div>
                
                 <div class="pp_state" id="flag_0_b" >
                     <div class="pp_time">

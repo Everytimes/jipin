@@ -1,6 +1,6 @@
-<?php
-
-if(!defined('IN_DISCUZ')) {
-	exit('Access Denied');
-}
-?>
+<?php
+
+if(!defined('IN_DISCUZ')) {
+	exit('Access Denied');
+}
+?>

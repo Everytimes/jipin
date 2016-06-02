@@ -44,21 +44,21 @@
 			</div>
 		</div>
 	</div>
-</div>
-<script type="text/javascript">
-
-function diggUpdate(){
-	var add=$('recommendv_add').innerHTML;
-	var sub=$('recommendv_subtract').innerHTML;
-	$('recommendv_sub_digg').innerHTML=sub;
-	$('recommendv_add_digg').innerHTML=add;
-	var addNum=Number(add);
-	var subNum=Number(sub);	
-	var addRate=100*addNum/(addNum+subNum);
-	var subRate=100-addRate;
-	$('tp_u').style.width=addRate.toFixed(2)+"%";
-	$('tp_d').style.width=subRate.toFixed(2)+"%";
-	
-}
+</div>
+<script type="text/javascript">
+
+function diggUpdate(){
+	var add=$('recommendv_add').innerHTML;
+	var sub=$('recommendv_subtract').innerHTML;
+	$('recommendv_sub_digg').innerHTML=sub;
+	$('recommendv_add_digg').innerHTML=add;
+	var addNum=Number(add);
+	var subNum=Number(sub);	
+	var addRate=100*addNum/(addNum+subNum);
+	var subRate=100-addRate;
+	$('tp_u').style.width=addRate.toFixed(2)+"%";
+	$('tp_d').style.width=subRate.toFixed(2)+"%";
+	
+}
 </script>
 <!--{/block}-->

@@ -47,9 +47,9 @@ if (isset($set_modules) && $set_modules == TRUE)
 
     /* 配送接口需要的参数 */
     $modules[$i]['configure'] = array(
-                                    array('name' => 'item_fee',     'value'=>20),/* 单件商品的配送费用 */
+                                    array('name' => 'item_fee',     'value'=>15),/* 单件商品的配送费用 */
                                     array('name' => 'base_fee',    'value'=>15), /* 1000克以内的价格   */
-                                    array('name' => 'step_fee',     'value'=>2),  /* 续重每1000克增加的价格 */
+                                    array('name' => 'step_fee',     'value'=>5),  /* 续重每1000克增加的价格 */
                                 );
 
     /* 模式编辑器 */
@@ -149,10 +149,10 @@ class zhjs_express
     {
 
         $str = '<form style="margin:0px" methods="post" '.
-        'action="http://115.238.100.211:8081/result.aspx" name="queryForm_' .$invoice_sn. '" target="_blank">'.
-        '<input type="hidden" name="wen" value="' .str_replace("<br>","\n",$invoice_sn). '" />'.
-        '<a href="javascript:document.forms[\'queryForm_' .$invoice_sn. '\'].submit();">' .$invoice_sn. '</a>'.
-        '</form>';
+            'action="http://115.238.100.211:8081/result.aspx" name="queryForm_' .$invoice_sn. '" target="_blank">'.
+            '<input type="hidden" name="wen" value="' .str_replace("<br>","\n",$invoice_sn). '" />'.
+            '<a href="javascript:document.forms[\'queryForm_' .$invoice_sn. '\'].submit();">' .$invoice_sn. '</a>'.
+            '</form>';
 
 
 //        $form_str = '<a href="http://www.sf-express.com/tabid/68/Default.aspx" target="_blank">' .$invoice_sn. '</a>';

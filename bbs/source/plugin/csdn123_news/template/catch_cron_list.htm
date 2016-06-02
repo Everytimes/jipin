@@ -1,46 +1,46 @@
-<script src="source/plugin/csdn123_news/res/jquery.min.js"></script>
-<script>
-function csdn123_del(uid)
-{
-	if(confirm("{lang csdn123_news:csdn123_tishi_isdel}"))
-	{
-		var csdn123_url="?{$_SERVER['QUERY_STRING']}&csdn123_delid=" + uid;
-		csdn123_url=csdn123_url.replace("&csdn123_cron=yes","");
-		$.get(csdn123_url,function(obj){
-			
-				if(obj.indexOf("delete_id_")!=-1)
-				{
-					$("#csdn123_" + "" + uid).hide("slow");
-				}
-			
-			});
-	}
-}
-</script>
-<table class="tb tb2 ">
-  <tbody>
-    <tr class="header">
-      <th>{lang csdn123_news:csdn123_tishi_dscj}</th>
-      <th>{lang csdn123_news:csdn123_tishi_fromtype}</th>
-      <th>{lang csdn123_news:csdn123_tishi_importfid2}</th>
-      <th>{lang csdn123_news:csdn123_tishi_showfromurl}</th>
-      <th>{lang csdn123_news:csdn123_tishi_runtime}</th>
-      <th>{lang csdn123_news:csdn123_tishi_precatchtime}</th>
-      <th></th>
-    </tr>
-    <!--{loop $csdn123_cron_list $csdn123_cron_list}-->
-    <tr class="hover" id="csdn123_{$csdn123_cron_list["id"]}">
-    	<td>{$csdn123_cron_list["csdn123_keyword"]}</td>
-    	<td><!--{eval echo $csdn123_fromtype_arr[$csdn123_cron_list["csdn123_fromtype"]] }--></td>
-    	<td><!--{eval echo csdn123_fidtoname($csdn123_cron_list["csdn123_importfid"]) }--></td>
-    	<td><!--{eval echo $csdn123_showfromurl_arr[$csdn123_cron_list["csdn123_showfromurl"]] }--></td>
-    	<td>{$csdn123_cron_list["csdn123_catch_num"]}</td>
-    	<td>{date($csdn123_cron_list["csdn123_catch_time"])}</td>
-        <td><a href="javascript:csdn123_del({$csdn123_cron_list["id"]})">{lang csdn123_news:csdn123_tishi_del}</a></td>
-    </tr>
-    <!--{/loop}-->
-    <tr>
-      <th colspan="19" class="partition"><span>{lang csdn123_news:csdn123_tishi_gxhqq}</span></th>
-    </tr>
-  </tbody>
+<script src="source/plugin/csdn123_news/res/jquery.min.js"></script>
+<script>
+function csdn123_del(uid)
+{
+	if(confirm("{lang csdn123_news:csdn123_tishi_isdel}"))
+	{
+		var csdn123_url="?{$_SERVER['QUERY_STRING']}&csdn123_delid=" + uid;
+		csdn123_url=csdn123_url.replace("&csdn123_cron=yes","");
+		$.get(csdn123_url,function(obj){
+			
+				if(obj.indexOf("delete_id_")!=-1)
+				{
+					$("#csdn123_" + "" + uid).hide("slow");
+				}
+			
+			});
+	}
+}
+</script>
+<table class="tb tb2 ">
+  <tbody>
+    <tr class="header">
+      <th>{lang csdn123_news:csdn123_tishi_dscj}</th>
+      <th>{lang csdn123_news:csdn123_tishi_fromtype}</th>
+      <th>{lang csdn123_news:csdn123_tishi_importfid2}</th>
+      <th>{lang csdn123_news:csdn123_tishi_showfromurl}</th>
+      <th>{lang csdn123_news:csdn123_tishi_runtime}</th>
+      <th>{lang csdn123_news:csdn123_tishi_precatchtime}</th>
+      <th></th>
+    </tr>
+    <!--{loop $csdn123_cron_list $csdn123_cron_list}-->
+    <tr class="hover" id="csdn123_{$csdn123_cron_list["id"]}">
+    	<td>{$csdn123_cron_list["csdn123_keyword"]}</td>
+    	<td><!--{eval echo $csdn123_fromtype_arr[$csdn123_cron_list["csdn123_fromtype"]] }--></td>
+    	<td><!--{eval echo csdn123_fidtoname($csdn123_cron_list["csdn123_importfid"]) }--></td>
+    	<td><!--{eval echo $csdn123_showfromurl_arr[$csdn123_cron_list["csdn123_showfromurl"]] }--></td>
+    	<td>{$csdn123_cron_list["csdn123_catch_num"]}</td>
+    	<td>{date($csdn123_cron_list["csdn123_catch_time"])}</td>
+        <td><a href="javascript:csdn123_del({$csdn123_cron_list["id"]})">{lang csdn123_news:csdn123_tishi_del}</a></td>
+    </tr>
+    <!--{/loop}-->
+    <tr>
+      <th colspan="19" class="partition"><span>{lang csdn123_news:csdn123_tishi_gxhqq}</span></th>
+    </tr>
+  </tbody>
 </table>

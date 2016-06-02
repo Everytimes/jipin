@@ -1,9 +1,9 @@
 <?php
 //Discuz! cache file, DO NOT modify me!
-//Identify: ad89a27a9e9f81172c04fd5b47622adb
+//Identify: 074475eb873a49553362ad5ccf2f1c43
 
  return array (
-  'expireat' => 1461014757,
+  'expireat' => 1464834746,
   'data' => 
   array (
     45 => 
@@ -21,11 +21,11 @@
       'groupexpiry' => '0',
       'extgroupids' => '',
       'regdate' => '1456468892',
-      'credits' => '1928',
+      'credits' => '2215',
       'notifysound' => '0',
       'timeoffset' => '9999',
       'newpm' => '0',
-      'newprompt' => '1',
+      'newprompt' => '0',
       'accessmasks' => '0',
       'allowadmincp' => '0',
       'onlyacceptfriendpm' => '0',
